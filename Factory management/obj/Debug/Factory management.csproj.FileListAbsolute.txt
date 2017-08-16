@@ -14,3 +14,4 @@ C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factor
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.supplierManagement.resources
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.Supplier_navigation.resources
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.supplierMaterial_orders.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.addEdit_vehicles.resources

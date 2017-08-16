@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addEdit_vehicles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addEdit_vehicles.Designer.cs">
+      <DependentUpon>addEdit_vehicles.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     <Compile Include="Utitlity.Designer.cs">
       <DependentUpon>Utitlity.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="addEdit_vehicles.resx">
+      <DependentUpon>addEdit_vehicles.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +166,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\approved_pending_orders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order_update .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order_update 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order_doc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\envelope.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vehicle_doc.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
