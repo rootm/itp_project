@@ -66,6 +66,12 @@
     <Compile Include="supplierManagement.Designer.cs">
       <DependentUpon>supplierManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="supplierMaterial_orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="supplierMaterial_orders.Designer.cs">
+      <DependentUpon>supplierMaterial_orders.cs</DependentUpon>
+    </Compile>
     <Compile Include="Supplier_navigation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     <EmbeddedResource Include="supplierManagement.resx">
       <DependentUpon>supplierManagement.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="supplierMaterial_orders.resx">
+      <DependentUpon>supplierMaterial_orders.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Supplier_navigation.resx">
       <DependentUpon>Supplier_navigation.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,6 +145,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pending_orders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_pending_orders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\approved_pending_orders.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
