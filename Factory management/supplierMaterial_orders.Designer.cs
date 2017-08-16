@@ -749,9 +749,9 @@
             this.Controls.Add(this.buttonX6);
             this.Controls.Add(this.buttonX5);
             this.Controls.Add(this.buttonX4);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
             this.Name = "supplierMaterial_orders";
             this.Text = "supplierMaterial_orders";
             this.Load += new System.EventHandler(this.supplierMaterial_orders_Load);

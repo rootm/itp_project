@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,13 +67,10 @@
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label30 = new System.Windows.Forms.Label();
             this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.label31 = new System.Windows.Forms.Label();
             this.buttonX3 = new DevComponents.DotNetBar.ButtonX();
             this.buttonX4 = new DevComponents.DotNetBar.ButtonX();
             this.label13 = new System.Windows.Forms.Label();
-            this.buttonX5 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX6 = new DevComponents.DotNetBar.ButtonX();
             this.label14 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -103,16 +100,21 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label10 = new System.Windows.Forms.Label();
-            this.buttonX7 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX8 = new DevComponents.DotNetBar.ButtonX();
             this.buttonX9 = new DevComponents.DotNetBar.ButtonX();
             this.buttonX10 = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX11 = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX8 = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX7 = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX5 = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX6 = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.buttonX11);
             this.panel1.Controls.Add(this.buttonX10);
             this.panel1.Controls.Add(this.buttonX9);
             this.panel1.Controls.Add(this.label10);
@@ -159,14 +161,14 @@
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
@@ -495,24 +497,6 @@
             this.buttonX2.TabIndex = 97;
             this.buttonX2.Text = "Save";
             // 
-            // buttonX1
-            // 
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonX1.FocusCuesEnabled = false;
-            this.buttonX1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX1.Image = global::Factory_management.Properties.Resources.vehicle_doc;
-            this.buttonX1.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.buttonX1.ImageTextSpacing = 5;
-            this.buttonX1.Location = new System.Drawing.Point(530, 372);
-            this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(20, 0, 20, 0);
-            this.buttonX1.Size = new System.Drawing.Size(147, 64);
-            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX1.TabIndex = 96;
-            this.buttonX1.Text = "Attach Book";
-            // 
             // label31
             // 
             this.label31.AutoSize = true;
@@ -545,10 +529,10 @@
             this.buttonX4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonX4.FocusCuesEnabled = false;
             this.buttonX4.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX4.Location = new System.Drawing.Point(684, 567);
+            this.buttonX4.Location = new System.Drawing.Point(521, 615);
             this.buttonX4.Name = "buttonX4";
-            this.buttonX4.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor();
-            this.buttonX4.Size = new System.Drawing.Size(117, 64);
+            this.buttonX4.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(0, 0, 15, 15);
+            this.buttonX4.Size = new System.Drawing.Size(412, 33);
             this.buttonX4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.buttonX4.Symbol = "";
             this.buttonX4.SymbolColor = System.Drawing.Color.Black;
@@ -564,43 +548,6 @@
             this.label13.Size = new System.Drawing.Size(184, 28);
             this.label13.TabIndex = 128;
             this.label13.Text = "Add New Vehicle";
-            // 
-            // buttonX5
-            // 
-            this.buttonX5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX5.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonX5.FocusCuesEnabled = false;
-            this.buttonX5.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX5.ImageTextSpacing = 10;
-            this.buttonX5.Location = new System.Drawing.Point(801, 567);
-            this.buttonX5.Name = "buttonX5";
-            this.buttonX5.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(0, 20, 0, 20);
-            this.buttonX5.Size = new System.Drawing.Size(111, 64);
-            this.buttonX5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX5.Symbol = "";
-            this.buttonX5.SymbolColor = System.Drawing.Color.Black;
-            this.buttonX5.SymbolSize = 25F;
-            this.buttonX5.TabIndex = 127;
-            this.buttonX5.Text = "Save";
-            // 
-            // buttonX6
-            // 
-            this.buttonX6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX6.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonX6.FocusCuesEnabled = false;
-            this.buttonX6.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX6.Image = global::Factory_management.Properties.Resources.vehicle_doc;
-            this.buttonX6.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.buttonX6.ImageTextSpacing = 5;
-            this.buttonX6.Location = new System.Drawing.Point(537, 567);
-            this.buttonX6.Name = "buttonX6";
-            this.buttonX6.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(20, 0, 20, 0);
-            this.buttonX6.Size = new System.Drawing.Size(147, 64);
-            this.buttonX6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX6.TabIndex = 126;
-            this.buttonX6.Text = "Attach Book";
             // 
             // label14
             // 
@@ -879,40 +826,6 @@
             this.label10.TabIndex = 130;
             this.label10.Text = "Edit Vehicle Details";
             // 
-            // buttonX7
-            // 
-            this.buttonX7.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX7.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonX7.FocusCuesEnabled = false;
-            this.buttonX7.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX7.Image = global::Factory_management.Properties.Resources.delivery_truck;
-            this.buttonX7.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.buttonX7.Location = new System.Drawing.Point(281, 0);
-            this.buttonX7.Name = "buttonX7";
-            this.buttonX7.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(0, 0, 20, 0);
-            this.buttonX7.Size = new System.Drawing.Size(221, 70);
-            this.buttonX7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX7.TabIndex = 100;
-            this.buttonX7.Text = "Add Vehicle Details";
-            // 
-            // buttonX8
-            // 
-            this.buttonX8.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX8.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonX8.FocusCuesEnabled = false;
-            this.buttonX8.Font = new System.Drawing.Font("Rubik", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX8.Image = global::Factory_management.Properties.Resources.delivery_truck_edit;
-            this.buttonX8.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.buttonX8.Location = new System.Drawing.Point(501, 0);
-            this.buttonX8.Name = "buttonX8";
-            this.buttonX8.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(0, 0, 0, 20);
-            this.buttonX8.Size = new System.Drawing.Size(221, 70);
-            this.buttonX8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX8.TabIndex = 101;
-            this.buttonX8.Text = "Edit Vehicle Details";
-            // 
             // buttonX9
             // 
             this.buttonX9.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
@@ -942,6 +855,112 @@
             this.buttonX10.SymbolColor = System.Drawing.Color.Black;
             this.buttonX10.TabIndex = 132;
             this.buttonX10.Text = "View All";
+            // 
+            // buttonX11
+            // 
+            this.buttonX11.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX11.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX11.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX11.Location = new System.Drawing.Point(668, 551);
+            this.buttonX11.Name = "buttonX11";
+            this.buttonX11.Size = new System.Drawing.Size(118, 64);
+            this.buttonX11.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX11.Symbol = "59506";
+            this.buttonX11.SymbolColor = System.Drawing.Color.Black;
+            this.buttonX11.SymbolSet = DevComponents.DotNetBar.eSymbolSet.Material;
+            this.buttonX11.SymbolSize = 30F;
+            this.buttonX11.TabIndex = 0;
+            this.buttonX11.Text = "Delete";
+            // 
+            // buttonX8
+            // 
+            this.buttonX8.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX8.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonX8.FocusCuesEnabled = false;
+            this.buttonX8.Font = new System.Drawing.Font("Rubik", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX8.Image = global::Factory_management.Properties.Resources.delivery_truck_edit;
+            this.buttonX8.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonX8.Location = new System.Drawing.Point(501, 0);
+            this.buttonX8.Name = "buttonX8";
+            this.buttonX8.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(0, 0, 0, 20);
+            this.buttonX8.Size = new System.Drawing.Size(221, 70);
+            this.buttonX8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX8.TabIndex = 101;
+            this.buttonX8.Text = "Edit Vehicle Details";
+            // 
+            // buttonX7
+            // 
+            this.buttonX7.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX7.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonX7.FocusCuesEnabled = false;
+            this.buttonX7.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX7.Image = global::Factory_management.Properties.Resources.delivery_truck;
+            this.buttonX7.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonX7.Location = new System.Drawing.Point(281, 0);
+            this.buttonX7.Name = "buttonX7";
+            this.buttonX7.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(0, 0, 20, 0);
+            this.buttonX7.Size = new System.Drawing.Size(221, 70);
+            this.buttonX7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX7.TabIndex = 100;
+            this.buttonX7.Text = "Add Vehicle Details";
+            // 
+            // buttonX5
+            // 
+            this.buttonX5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX5.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonX5.FocusCuesEnabled = false;
+            this.buttonX5.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX5.Image = global::Factory_management.Properties.Resources.vehicle_update;
+            this.buttonX5.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonX5.ImageTextSpacing = 10;
+            this.buttonX5.Location = new System.Drawing.Point(786, 551);
+            this.buttonX5.Name = "buttonX5";
+            this.buttonX5.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(0, 20, 0, 0);
+            this.buttonX5.Size = new System.Drawing.Size(147, 64);
+            this.buttonX5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX5.SymbolColor = System.Drawing.Color.Black;
+            this.buttonX5.SymbolSize = 25F;
+            this.buttonX5.TabIndex = 127;
+            this.buttonX5.Text = "Update";
+            // 
+            // buttonX6
+            // 
+            this.buttonX6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX6.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonX6.FocusCuesEnabled = false;
+            this.buttonX6.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX6.Image = global::Factory_management.Properties.Resources.vehicle_doc;
+            this.buttonX6.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonX6.ImageTextSpacing = 5;
+            this.buttonX6.Location = new System.Drawing.Point(521, 551);
+            this.buttonX6.Name = "buttonX6";
+            this.buttonX6.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(20, 0, 0, 0);
+            this.buttonX6.Size = new System.Drawing.Size(147, 64);
+            this.buttonX6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX6.TabIndex = 126;
+            this.buttonX6.Text = "Attach Book";
+            // 
+            // buttonX1
+            // 
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonX1.FocusCuesEnabled = false;
+            this.buttonX1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX1.Image = global::Factory_management.Properties.Resources.vehicle_doc;
+            this.buttonX1.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonX1.ImageTextSpacing = 5;
+            this.buttonX1.Location = new System.Drawing.Point(530, 372);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(20, 0, 20, 0);
+            this.buttonX1.Size = new System.Drawing.Size(147, 64);
+            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX1.TabIndex = 96;
+            this.buttonX1.Text = "Attach Book";
             // 
             // addEdit_vehicles
             // 
@@ -1072,5 +1091,6 @@
         private DevComponents.DotNetBar.ButtonX buttonX8;
         private DevComponents.DotNetBar.ButtonX buttonX10;
         private DevComponents.DotNetBar.ButtonX buttonX9;
+        private DevComponents.DotNetBar.ButtonX buttonX11;
     }
 }
