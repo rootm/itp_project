@@ -1,0 +1,15 @@
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\Factory management.exe
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\Factory management.pdb
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.login.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.Properties.Resources.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.SysMain.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.Utitlity.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory management.csproj.GenerateResource.Cache
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory management.exe
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory management.pdb
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\supplier_management_ganesh.supp.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory management.csprojResolveAssemblyReference.cache
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.supplierManagement.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.Supplier_navigation.resources
