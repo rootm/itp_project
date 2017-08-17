@@ -16,5 +16,19 @@ namespace Factory_management
         {
             InitializeComponent();
         }
+
+        private void buttonX8_Click(object sender, EventArgs e)
+        {
+            label10.Visible = true;
+            panel1.Visible = true;
+            panel1.BringToFront();
+        }
+
+        private void buttonX7_Click(object sender, EventArgs e)
+        {
+            label10.Visible = false;
+            panel1.Visible = false;
+            panel1.SendToBack();
+        }
     }
 }

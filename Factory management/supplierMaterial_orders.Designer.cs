@@ -30,6 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.buttonX3 = new DevComponents.DotNetBar.ButtonX();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
@@ -41,7 +42,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.buttonX10 = new DevComponents.DotNetBar.ButtonX();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.buttonX7 = new DevComponents.DotNetBar.ButtonX();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
             this.buttonX8 = new DevComponents.DotNetBar.ButtonX();
@@ -52,16 +59,15 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label24 = new System.Windows.Forms.Label();
+            this.buttonX11 = new DevComponents.DotNetBar.ButtonX();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.buttonX12 = new DevComponents.DotNetBar.ButtonX();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.label20 = new System.Windows.Forms.Label();
             this.buttonX13 = new DevComponents.DotNetBar.ButtonX();
@@ -72,15 +78,9 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.label24 = new System.Windows.Forms.Label();
-            this.buttonX11 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX12 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX10 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX7 = new DevComponents.DotNetBar.ButtonX();
             this.buttonX6 = new DevComponents.DotNetBar.ButtonX();
             this.buttonX5 = new DevComponents.DotNetBar.ButtonX();
             this.buttonX4 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX3 = new DevComponents.DotNetBar.ButtonX();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -120,6 +120,21 @@
             this.label5.Size = new System.Drawing.Size(317, 28);
             this.label5.TabIndex = 23;
             this.label5.Text = "Pending Raw Material Orders";
+            // 
+            // buttonX3
+            // 
+            this.buttonX3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX3.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX3.Image = global::Factory_management.Properties.Resources.check;
+            this.buttonX3.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonX3.ImageTextSpacing = 10;
+            this.buttonX3.Location = new System.Drawing.Point(19, 553);
+            this.buttonX3.Name = "buttonX3";
+            this.buttonX3.Size = new System.Drawing.Size(273, 62);
+            this.buttonX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX3.TabIndex = 22;
+            this.buttonX3.Text = "Request Order Payment";
             // 
             // dataGridView2
             // 
@@ -250,6 +265,64 @@
             this.panel2.TabIndex = 4;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // buttonX10
+            // 
+            this.buttonX10.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX10.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonX10.FocusCuesEnabled = false;
+            this.buttonX10.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX10.Image = global::Factory_management.Properties.Resources.order_update_1;
+            this.buttonX10.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonX10.ImageTextSpacing = 10;
+            this.buttonX10.Location = new System.Drawing.Point(186, 556);
+            this.buttonX10.Name = "buttonX10";
+            this.buttonX10.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(0, 20, 0, 20);
+            this.buttonX10.Size = new System.Drawing.Size(168, 59);
+            this.buttonX10.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX10.TabIndex = 29;
+            this.buttonX10.Text = "Update Order";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(15, 499);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(150, 22);
+            this.label14.TabIndex = 27;
+            this.label14.Text = "Unit Price (LKR)     :";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(15, 419);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(298, 22);
+            this.label13.TabIndex = 26;
+            this.label13.Text = "Supplier Name      : xxxxxxxxxxxxxxxxxx";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(16, 459);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(150, 22);
+            this.label12.TabIndex = 25;
+            this.label12.Text = "Supplier Location :";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(15, 381);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(216, 22);
+            this.label11.TabIndex = 24;
+            this.label11.Text = "Supplier ID             : 0000000";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -259,6 +332,24 @@
             this.label6.Size = new System.Drawing.Size(362, 28);
             this.label6.TabIndex = 23;
             this.label6.Text = "Edit Pending Raw Material Orders";
+            // 
+            // buttonX7
+            // 
+            this.buttonX7.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX7.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonX7.FocusCuesEnabled = false;
+            this.buttonX7.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX7.Image = global::Factory_management.Properties.Resources.delivery_truck_edit;
+            this.buttonX7.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonX7.ImageTextSpacing = 10;
+            this.buttonX7.Location = new System.Drawing.Point(18, 556);
+            this.buttonX7.Name = "buttonX7";
+            this.buttonX7.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(20, 0, 20, 0);
+            this.buttonX7.Size = new System.Drawing.Size(168, 59);
+            this.buttonX7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX7.TabIndex = 22;
+            this.buttonX7.Text = "Change Supplier";
             // 
             // dataGridView3
             // 
@@ -367,46 +458,6 @@
             this.dataGridView4.Size = new System.Drawing.Size(604, 150);
             this.dataGridView4.TabIndex = 12;
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(15, 381);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(216, 22);
-            this.label11.TabIndex = 24;
-            this.label11.Text = "Supplier ID             : 0000000";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(16, 459);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(150, 22);
-            this.label12.TabIndex = 25;
-            this.label12.Text = "Supplier Location :";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(15, 419);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(298, 22);
-            this.label13.TabIndex = 26;
-            this.label13.Text = "Supplier Name      : xxxxxxxxxxxxxxxxxx";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(15, 499);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(150, 22);
-            this.label14.TabIndex = 27;
-            this.label14.Text = "Unit Price (LKR)     :";
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.label24);
@@ -431,6 +482,34 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(752, 659);
             this.panel3.TabIndex = 5;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(19, 543);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(148, 22);
+            this.label24.TabIndex = 30;
+            this.label24.Text = "Grand Total           :";
+            // 
+            // buttonX11
+            // 
+            this.buttonX11.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX11.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonX11.FocusCuesEnabled = false;
+            this.buttonX11.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX11.Image = global::Factory_management.Properties.Resources.envelope;
+            this.buttonX11.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonX11.ImageTextSpacing = 10;
+            this.buttonX11.Location = new System.Drawing.Point(184, 580);
+            this.buttonX11.Name = "buttonX11";
+            this.buttonX11.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(0, 20, 0, 20);
+            this.buttonX11.Size = new System.Drawing.Size(168, 59);
+            this.buttonX11.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX11.TabIndex = 29;
+            this.buttonX11.Text = "Email Supplier";
             // 
             // label15
             // 
@@ -481,6 +560,24 @@
             this.label19.Size = new System.Drawing.Size(333, 28);
             this.label19.TabIndex = 23;
             this.label19.Text = "Approved Raw Material Orders";
+            // 
+            // buttonX12
+            // 
+            this.buttonX12.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX12.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonX12.FocusCuesEnabled = false;
+            this.buttonX12.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX12.Image = global::Factory_management.Properties.Resources.order_doc;
+            this.buttonX12.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonX12.ImageTextSpacing = 10;
+            this.buttonX12.Location = new System.Drawing.Point(16, 580);
+            this.buttonX12.Name = "buttonX12";
+            this.buttonX12.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(20, 0, 20, 0);
+            this.buttonX12.Size = new System.Drawing.Size(168, 59);
+            this.buttonX12.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX12.TabIndex = 22;
+            this.buttonX12.Text = "Order Document";
             // 
             // dataGridView5
             // 
@@ -589,88 +686,6 @@
             this.dataGridView6.Size = new System.Drawing.Size(604, 150);
             this.dataGridView6.TabIndex = 12;
             // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(19, 543);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(148, 22);
-            this.label24.TabIndex = 30;
-            this.label24.Text = "Grand Total           :";
-            // 
-            // buttonX11
-            // 
-            this.buttonX11.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX11.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonX11.FocusCuesEnabled = false;
-            this.buttonX11.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX11.Image = global::Factory_management.Properties.Resources.envelope;
-            this.buttonX11.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.buttonX11.ImageTextSpacing = 10;
-            this.buttonX11.Location = new System.Drawing.Point(184, 580);
-            this.buttonX11.Name = "buttonX11";
-            this.buttonX11.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(0, 20, 0, 20);
-            this.buttonX11.Size = new System.Drawing.Size(168, 59);
-            this.buttonX11.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX11.TabIndex = 29;
-            this.buttonX11.Text = "Email Supplier";
-            // 
-            // buttonX12
-            // 
-            this.buttonX12.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX12.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonX12.FocusCuesEnabled = false;
-            this.buttonX12.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX12.Image = global::Factory_management.Properties.Resources.order_doc;
-            this.buttonX12.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.buttonX12.ImageTextSpacing = 10;
-            this.buttonX12.Location = new System.Drawing.Point(16, 580);
-            this.buttonX12.Name = "buttonX12";
-            this.buttonX12.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(20, 0, 20, 0);
-            this.buttonX12.Size = new System.Drawing.Size(168, 59);
-            this.buttonX12.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX12.TabIndex = 22;
-            this.buttonX12.Text = "Order Document";
-            // 
-            // buttonX10
-            // 
-            this.buttonX10.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX10.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonX10.FocusCuesEnabled = false;
-            this.buttonX10.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX10.Image = global::Factory_management.Properties.Resources.order_update_1;
-            this.buttonX10.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.buttonX10.ImageTextSpacing = 10;
-            this.buttonX10.Location = new System.Drawing.Point(186, 556);
-            this.buttonX10.Name = "buttonX10";
-            this.buttonX10.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(0, 20, 0, 20);
-            this.buttonX10.Size = new System.Drawing.Size(168, 59);
-            this.buttonX10.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX10.TabIndex = 29;
-            this.buttonX10.Text = "Update Order";
-            // 
-            // buttonX7
-            // 
-            this.buttonX7.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX7.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonX7.FocusCuesEnabled = false;
-            this.buttonX7.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX7.Image = global::Factory_management.Properties.Resources.delivery_truck_edit;
-            this.buttonX7.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.buttonX7.ImageTextSpacing = 10;
-            this.buttonX7.Location = new System.Drawing.Point(18, 556);
-            this.buttonX7.Name = "buttonX7";
-            this.buttonX7.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(20, 0, 20, 0);
-            this.buttonX7.Size = new System.Drawing.Size(168, 59);
-            this.buttonX7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX7.TabIndex = 22;
-            this.buttonX7.Text = "Change Supplier";
-            // 
             // buttonX6
             // 
             this.buttonX6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
@@ -726,32 +741,17 @@
             this.buttonX4.Text = "Pending Requests";
             this.buttonX4.TextAlignment = DevComponents.DotNetBar.eButtonTextAlignment.Left;
             // 
-            // buttonX3
-            // 
-            this.buttonX3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX3.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX3.Image = global::Factory_management.Properties.Resources.check;
-            this.buttonX3.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.buttonX3.ImageTextSpacing = 10;
-            this.buttonX3.Location = new System.Drawing.Point(19, 553);
-            this.buttonX3.Name = "buttonX3";
-            this.buttonX3.Size = new System.Drawing.Size(273, 62);
-            this.buttonX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX3.TabIndex = 22;
-            this.buttonX3.Text = "Request Order Payment";
-            // 
             // supplierMaterial_orders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(775, 737);
+            this.ClientSize = new System.Drawing.Size(775, 733);
             this.Controls.Add(this.buttonX6);
             this.Controls.Add(this.buttonX5);
             this.Controls.Add(this.buttonX4);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
             this.Name = "supplierMaterial_orders";
             this.Text = "supplierMaterial_orders";
             this.Load += new System.EventHandler(this.supplierMaterial_orders_Load);
