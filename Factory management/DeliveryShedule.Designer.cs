@@ -58,11 +58,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.buttonX6 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX5 = new DevComponents.DotNetBar.ButtonX();
             this.label21 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.buttonX3 = new DevComponents.DotNetBar.ButtonX();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -87,8 +83,6 @@
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.buttonX4 = new DevComponents.DotNetBar.ButtonX();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
             this.label22 = new System.Windows.Forms.Label();
@@ -98,17 +92,23 @@
             this.buttonX8 = new DevComponents.DotNetBar.ButtonX();
             this.buttonX9 = new DevComponents.DotNetBar.ButtonX();
             this.buttonX10 = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX6 = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX5 = new DevComponents.DotNetBar.ButtonX();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.buttonX3 = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX4 = new DevComponents.DotNetBar.ButtonX();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dateTimePicker1
@@ -389,39 +389,11 @@
             this.panel1.Controls.Add(this.dataGridView5);
             this.panel1.Controls.Add(this.label20);
             this.panel1.Controls.Add(this.dataGridView6);
-            this.panel1.Location = new System.Drawing.Point(0, 1);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1100, 624);
+            this.panel1.Size = new System.Drawing.Size(1100, 625);
             this.panel1.TabIndex = 47;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // buttonX6
-            // 
-            this.buttonX6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonX6.FocusCuesEnabled = false;
-            this.buttonX6.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX6.Image = global::Factory_management.Properties.Resources.calendar;
-            this.buttonX6.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.buttonX6.Location = new System.Drawing.Point(603, 23);
-            this.buttonX6.Name = "buttonX6";
-            this.buttonX6.Size = new System.Drawing.Size(256, 58);
-            this.buttonX6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX6.TabIndex = 64;
-            this.buttonX6.Text = "View Delivery Shedule";
-            // 
-            // buttonX5
-            // 
-            this.buttonX5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX5.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX5.Image = global::Factory_management.Properties.Resources.delete_deliveryShedule;
-            this.buttonX5.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.buttonX5.Location = new System.Drawing.Point(588, 537);
-            this.buttonX5.Name = "buttonX5";
-            this.buttonX5.Size = new System.Drawing.Size(243, 62);
-            this.buttonX5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX5.TabIndex = 63;
-            this.buttonX5.Text = "Delete Shedule";
             // 
             // label21
             // 
@@ -433,29 +405,6 @@
             this.label21.Size = new System.Drawing.Size(409, 28);
             this.label21.TabIndex = 61;
             this.label21.Text = "Edit Sheduled Product Orders Delivery";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Factory_management.Properties.Resources.trolley;
-            this.pictureBox2.Location = new System.Drawing.Point(32, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(80, 69);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 62;
-            this.pictureBox2.TabStop = false;
-            // 
-            // buttonX3
-            // 
-            this.buttonX3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX3.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX3.Image = global::Factory_management.Properties.Resources.update_deliveryShedule;
-            this.buttonX3.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.buttonX3.Location = new System.Drawing.Point(847, 537);
-            this.buttonX3.Name = "buttonX3";
-            this.buttonX3.Size = new System.Drawing.Size(243, 62);
-            this.buttonX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX3.TabIndex = 60;
-            this.buttonX3.Text = "Update Shedule";
             // 
             // label12
             // 
@@ -650,29 +599,6 @@
             this.dataGridViewTextBoxColumn13.HeaderText = "Availability";
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
             // 
-            // buttonX4
-            // 
-            this.buttonX4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX4.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX4.Image = global::Factory_management.Properties.Resources.trolley;
-            this.buttonX4.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.buttonX4.Location = new System.Drawing.Point(842, 545);
-            this.buttonX4.Name = "buttonX4";
-            this.buttonX4.Size = new System.Drawing.Size(243, 62);
-            this.buttonX4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX4.TabIndex = 45;
-            this.buttonX4.Text = "Shedule Delivery";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Factory_management.Properties.Resources.trolley;
-            this.pictureBox1.Location = new System.Drawing.Point(32, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(80, 69);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 46;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.buttonX10);
@@ -787,6 +713,80 @@
             this.buttonX10.TabIndex = 63;
             this.buttonX10.Text = "Select Delivery";
             // 
+            // buttonX6
+            // 
+            this.buttonX6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonX6.FocusCuesEnabled = false;
+            this.buttonX6.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX6.Image = global::Factory_management.Properties.Resources.calendar;
+            this.buttonX6.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonX6.Location = new System.Drawing.Point(603, 23);
+            this.buttonX6.Name = "buttonX6";
+            this.buttonX6.Size = new System.Drawing.Size(256, 58);
+            this.buttonX6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX6.TabIndex = 64;
+            this.buttonX6.Text = "View Delivery Shedule";
+            // 
+            // buttonX5
+            // 
+            this.buttonX5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX5.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX5.Image = global::Factory_management.Properties.Resources.delete_deliveryShedule;
+            this.buttonX5.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonX5.Location = new System.Drawing.Point(588, 537);
+            this.buttonX5.Name = "buttonX5";
+            this.buttonX5.Size = new System.Drawing.Size(243, 62);
+            this.buttonX5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX5.TabIndex = 63;
+            this.buttonX5.Text = "Delete Shedule";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Factory_management.Properties.Resources.trolley;
+            this.pictureBox2.Location = new System.Drawing.Point(32, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(80, 69);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 62;
+            this.pictureBox2.TabStop = false;
+            // 
+            // buttonX3
+            // 
+            this.buttonX3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX3.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX3.Image = global::Factory_management.Properties.Resources.update_deliveryShedule;
+            this.buttonX3.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonX3.Location = new System.Drawing.Point(847, 537);
+            this.buttonX3.Name = "buttonX3";
+            this.buttonX3.Size = new System.Drawing.Size(243, 62);
+            this.buttonX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX3.TabIndex = 60;
+            this.buttonX3.Text = "Update Shedule";
+            // 
+            // buttonX4
+            // 
+            this.buttonX4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX4.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX4.Image = global::Factory_management.Properties.Resources.trolley;
+            this.buttonX4.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonX4.Location = new System.Drawing.Point(842, 545);
+            this.buttonX4.Name = "buttonX4";
+            this.buttonX4.Size = new System.Drawing.Size(243, 62);
+            this.buttonX4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX4.TabIndex = 45;
+            this.buttonX4.Text = "Shedule Delivery";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Factory_management.Properties.Resources.trolley;
+            this.pictureBox1.Location = new System.Drawing.Point(32, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(80, 69);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 46;
+            this.pictureBox1.TabStop = false;
+            // 
             // DeliveryShedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -824,14 +824,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

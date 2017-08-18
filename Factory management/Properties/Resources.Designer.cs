@@ -73,6 +73,16 @@ namespace Factory_management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap auto {
+            get {
+                object obj = ResourceManager.GetObject("auto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bill {
             get {
                 object obj = ResourceManager.GetObject("bill", resourceCulture);
@@ -86,6 +96,36 @@ namespace Factory_management.Properties {
         internal static System.Drawing.Bitmap calendar {
             get {
                 object obj = ResourceManager.GetObject("calendar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calendar__delete {
+            get {
+                object obj = ResourceManager.GetObject("calendar _delete", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calendar__update {
+            get {
+                object obj = ResourceManager.GetObject("calendar _update", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calendar__update1 {
+            get {
+                object obj = ResourceManager.GetObject("calendar _update1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -216,6 +256,16 @@ namespace Factory_management.Properties {
         internal static System.Drawing.Bitmap report {
             get {
                 object obj = ResourceManager.GetObject("report", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap schedule {
+            get {
+                object obj = ResourceManager.GetObject("schedule", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

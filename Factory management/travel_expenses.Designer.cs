@@ -92,7 +92,6 @@
             // buttonX1
             // 
             this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
             this.buttonX1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonX1.FocusCuesEnabled = false;
             this.buttonX1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -109,7 +108,6 @@
             // buttonX2
             // 
             this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
             this.buttonX2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonX2.FocusCuesEnabled = false;
             this.buttonX2.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -228,7 +226,6 @@
             // buttonX5
             // 
             this.buttonX5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX5.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
             this.buttonX5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonX5.FocusCuesEnabled = false;
             this.buttonX5.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
