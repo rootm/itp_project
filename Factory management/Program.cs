@@ -16,7 +16,7 @@ namespace Factory_management
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DeliveryShedule());
+            Application.Run(new travel_expenses());
         }
     }
 }

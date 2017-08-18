@@ -102,6 +102,12 @@
     <Compile Include="SysMain.Designer.cs">
       <DependentUpon>SysMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="travel_expenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="travel_expenses.Designer.cs">
+      <DependentUpon>travel_expenses.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utitlity.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SysMain.resx">
       <DependentUpon>SysMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="travel_expenses.resx">
+      <DependentUpon>travel_expenses.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Utitlity.resx">
       <DependentUpon>Utitlity.cs</DependentUpon>
@@ -218,6 +227,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diskette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
