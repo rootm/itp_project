@@ -10,19 +10,24 @@ using System.Windows.Forms;
 
 namespace Factory_management
 {
-    public partial class transport_shedule : Form
+    public partial class machines : Form
     {
-        public transport_shedule()
+        public machines()
         {
             InitializeComponent();
         }
 
-        private void transport_shedule_Load(object sender, EventArgs e)
+        private void machines_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

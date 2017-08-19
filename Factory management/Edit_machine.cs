@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Factory_management
 {
-    public partial class transport_shedule : Form
+    public partial class Edit_machine : Form
     {
-        public transport_shedule()
+        public Edit_machine()
         {
             InitializeComponent();
-        }
-
-        private void transport_shedule_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

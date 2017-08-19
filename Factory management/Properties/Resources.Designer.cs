@@ -173,6 +173,16 @@ namespace Factory_management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap diploma {
+            get {
+                object obj = ResourceManager.GetObject("diploma", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap diskette {
             get {
                 object obj = ResourceManager.GetObject("diskette", resourceCulture);
@@ -246,6 +256,16 @@ namespace Factory_management.Properties {
         internal static System.Drawing.Bitmap pending_orders {
             get {
                 object obj = ResourceManager.GetObject("pending_orders", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap repair {
+            get {
+                object obj = ResourceManager.GetObject("repair", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
