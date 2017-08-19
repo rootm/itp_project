@@ -58,6 +58,12 @@
     <Compile Include="DeliveryShedule.Designer.cs">
       <DependentUpon>DeliveryShedule.cs</DependentUpon>
     </Compile>
+    <Compile Include="Edit_machine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_machine.Designer.cs">
+      <DependentUpon>Edit_machine.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,11 +138,20 @@
     <Compile Include="Utitlity.Designer.cs">
       <DependentUpon>Utitlity.cs</DependentUpon>
     </Compile>
+    <Compile Include="vehicleRepairs_shedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vehicleRepairs_shedule.Designer.cs">
+      <DependentUpon>vehicleRepairs_shedule.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="addEdit_vehicles.resx">
       <DependentUpon>addEdit_vehicles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeliveryShedule.resx">
       <DependentUpon>DeliveryShedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_machine.resx">
+      <DependentUpon>Edit_machine.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -184,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Utitlity.resx">
       <DependentUpon>Utitlity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vehicleRepairs_shedule.resx">
+      <DependentUpon>vehicleRepairs_shedule.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -278,6 +296,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\diploma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repair.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

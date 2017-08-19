@@ -20,3 +20,7 @@ C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factor
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory management.exe.licenses
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.travel_expenses.resources
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.transport_shedule.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.Edit_machine.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.machines.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.Maintenance_machines.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.vehicleRepairs_shedule.resources

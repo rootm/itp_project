@@ -30,10 +30,26 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.buttonX10 = new DevComponents.DotNetBar.ButtonX();
             this.buttonX9 = new DevComponents.DotNetBar.ButtonX();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,23 +62,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.buttonX4 = new DevComponents.DotNetBar.ButtonX();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -102,6 +102,70 @@
             this.panel1.TabIndex = 37;
             this.panel1.Visible = false;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(28, 14);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(228, 26);
+            this.label3.TabIndex = 139;
+            this.label3.Text = "Vehicle Repair Request";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(725, 372);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(197, 113);
+            this.textBox4.TabIndex = 138;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(725, 330);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(197, 30);
+            this.comboBox1.TabIndex = 137;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(515, 378);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(151, 22);
+            this.label2.TabIndex = 136;
+            this.label2.Text = "Reapir Description";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(515, 334);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 22);
+            this.label1.TabIndex = 135;
+            this.label1.Text = "Repair Type";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(229, 505);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(204, 29);
+            this.textBox2.TabIndex = 134;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(229, 375);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(204, 29);
+            this.textBox1.TabIndex = 133;
             // 
             // buttonX10
             // 
@@ -152,6 +216,90 @@
             this.label14.Size = new System.Drawing.Size(127, 22);
             this.label14.TabIndex = 125;
             this.label14.Text = "Vehicle Details";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.Location = new System.Drawing.Point(229, 331);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(204, 29);
+            this.textBox9.TabIndex = 109;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(28, 375);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(104, 22);
+            this.label19.TabIndex = 102;
+            this.label19.Text = "Vehicle Type";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(28, 334);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(163, 22);
+            this.label20.TabIndex = 101;
+            this.label20.Text = "Vehicle Reg.Number";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(28, 505);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(125, 22);
+            this.label23.TabIndex = 121;
+            this.label23.Text = "Insurance Type";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(28, 422);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(152, 22);
+            this.label28.TabIndex = 119;
+            this.label28.Text = "Insurance Number";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(28, 463);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(161, 22);
+            this.label32.TabIndex = 116;
+            this.label32.Text = "Insurance Company";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox13.Location = new System.Drawing.Point(229, 460);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(204, 29);
+            this.textBox13.TabIndex = 114;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox14.Location = new System.Drawing.Point(229, 419);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(204, 29);
+            this.textBox14.TabIndex = 112;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(515, 299);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(122, 22);
+            this.label33.TabIndex = 107;
+            this.label33.Text = "Repair Details";
             // 
             // dataGridView1
             // 
@@ -253,144 +401,6 @@
             this.label5.Size = new System.Drawing.Size(0, 13);
             this.label5.TabIndex = 4;
             // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(515, 299);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(122, 22);
-            this.label33.TabIndex = 107;
-            this.label33.Text = "Repair Details";
-            // 
-            // textBox14
-            // 
-            this.textBox14.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(229, 419);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(204, 29);
-            this.textBox14.TabIndex = 112;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(229, 460);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(204, 29);
-            this.textBox13.TabIndex = 114;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(28, 463);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(161, 22);
-            this.label32.TabIndex = 116;
-            this.label32.Text = "Insurance Company";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(28, 422);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(152, 22);
-            this.label28.TabIndex = 119;
-            this.label28.Text = "Insurance Number";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(28, 505);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(125, 22);
-            this.label23.TabIndex = 121;
-            this.label23.Text = "Insurance Type";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(28, 334);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(163, 22);
-            this.label20.TabIndex = 101;
-            this.label20.Text = "Vehicle Reg.Number";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(28, 375);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(104, 22);
-            this.label19.TabIndex = 102;
-            this.label19.Text = "Vehicle Type";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(229, 331);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(204, 29);
-            this.textBox9.TabIndex = 109;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(229, 375);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(204, 29);
-            this.textBox1.TabIndex = 133;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(229, 505);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(204, 29);
-            this.textBox2.TabIndex = 134;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(515, 334);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 22);
-            this.label1.TabIndex = 135;
-            this.label1.Text = "Repair Type";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(515, 378);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(151, 22);
-            this.label2.TabIndex = 136;
-            this.label2.Text = "Reapir Description";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(725, 330);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(197, 30);
-            this.comboBox1.TabIndex = 137;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(725, 372);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(197, 113);
-            this.textBox4.TabIndex = 138;
-            // 
             // buttonX4
             // 
             this.buttonX4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
@@ -407,16 +417,6 @@
             this.buttonX4.SymbolColor = System.Drawing.Color.Black;
             this.buttonX4.TabIndex = 129;
             this.buttonX4.Text = "Request Repair";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(28, 14);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(228, 26);
-            this.label3.TabIndex = 139;
-            this.label3.Text = "Vehicle Repair Request";
             // 
             // repairRequest
             // 
