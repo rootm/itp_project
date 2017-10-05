@@ -33,7 +33,6 @@
             this.buttonX11 = new DevComponents.DotNetBar.ButtonX();
             this.buttonX10 = new DevComponents.DotNetBar.ButtonX();
             this.buttonX9 = new DevComponents.DotNetBar.ButtonX();
-            this.label10 = new System.Windows.Forms.Label();
             this.buttonX4 = new DevComponents.DotNetBar.ButtonX();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -74,6 +73,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -155,7 +155,7 @@
             this.panel1.Controls.Add(this.label5);
             this.panel1.Location = new System.Drawing.Point(12, 83);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(941, 275);
+            this.panel1.Size = new System.Drawing.Size(941, 47);
             this.panel1.TabIndex = 36;
             this.panel1.Visible = false;
             // 
@@ -204,17 +204,6 @@
             this.buttonX9.SymbolColor = System.Drawing.Color.Black;
             this.buttonX9.TabIndex = 131;
             this.buttonX9.Text = "Search";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(42, 52);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(209, 28);
-            this.label10.TabIndex = 130;
-            this.label10.Text = "Edit Vehicle Details";
-            this.label10.Visible = false;
             // 
             // buttonX4
             // 
@@ -585,6 +574,17 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(0, 13);
             this.label5.TabIndex = 4;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(42, 52);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(209, 28);
+            this.label10.TabIndex = 130;
+            this.label10.Text = "Edit Vehicle Details";
+            this.label10.Visible = false;
             // 
             // dateTimePicker1
             // 

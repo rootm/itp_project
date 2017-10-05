@@ -16,7 +16,7 @@ namespace Factory_management
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new vehicleRepairs_shedule());
+            Application.Run(new splash());
         }
     }
 }

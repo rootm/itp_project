@@ -43,8 +43,6 @@
             this.textBox35 = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
@@ -121,8 +119,6 @@
             this.textBox29 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -202,8 +198,6 @@
             this.groupBox6.Controls.Add(this.textBox35);
             this.groupBox6.Controls.Add(this.label32);
             this.groupBox6.Controls.Add(this.label33);
-            this.groupBox6.Controls.Add(this.label38);
-            this.groupBox6.Controls.Add(this.comboBox3);
             this.groupBox6.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox6.Location = new System.Drawing.Point(13, 312);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
@@ -330,234 +324,6 @@
             this.label33.Size = new System.Drawing.Size(38, 22);
             this.label33.TabIndex = 18;
             this.label33.Text = "City";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.BackColor = System.Drawing.Color.Transparent;
-            this.label38.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label38.Location = new System.Drawing.Point(14, 242);
-            this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(71, 22);
-            this.label38.TabIndex = 11;
-            this.label38.Text = "Country";
-            this.label38.Click += new System.EventHandler(this.label38_Click);
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.AllowDrop = true;
-            this.comboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.comboBox3.DropDownHeight = 120;
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.IntegralHeight = false;
-            this.comboBox3.Items.AddRange(new object[] {
-            "Afghanistan",
-            "Albania",
-            "Algeria",
-            "Andorra",
-            "Angola",
-            "Antigua & Deps",
-            "Argentina",
-            "Armenia",
-            "Australia",
-            "Austria",
-            "Azerbaijan",
-            "Bahamas",
-            "Bahrain",
-            "Bangladesh",
-            "Barbados",
-            "Belarus",
-            "Belgium",
-            "Belize",
-            "Benin",
-            "Bhutan",
-            "Bolivia",
-            "Bosnia Herzegovina",
-            "Botswana",
-            "Brazil",
-            "Brunei",
-            "Bulgaria",
-            "Burkina",
-            "Burundi",
-            "Cambodia",
-            "Cameroon",
-            "Canada",
-            "Cape Verde",
-            "Central African Rep",
-            "Chad",
-            "Chile",
-            "China",
-            "Colombia",
-            "Comoros",
-            "Congo",
-            "Congo {Democratic Rep}",
-            "Costa Rica",
-            "Croatia",
-            "Cuba",
-            "Cyprus",
-            "Czech Republic",
-            "Denmark",
-            "Djibouti",
-            "Dominica",
-            "Dominican Republic",
-            "East Timor",
-            "Ecuador",
-            "Egypt",
-            "El Salvador",
-            "Equatorial Guinea",
-            "Eritrea",
-            "Estonia",
-            "Ethiopia",
-            "Fiji",
-            "Finland",
-            "France",
-            "Gabon",
-            "Gambia",
-            "Georgia",
-            "Germany",
-            "Ghana",
-            "Greece",
-            "Grenada",
-            "Guatemala",
-            "Guinea",
-            "Guinea-Bissau",
-            "Guyana",
-            "Haiti",
-            "Honduras",
-            "Hungary",
-            "Iceland",
-            "India",
-            "Indonesia",
-            "Iran",
-            "Iraq",
-            "Ireland {Republic}",
-            "Israel",
-            "Italy",
-            "Ivory Coast",
-            "Jamaica",
-            "Japan",
-            "Jordan",
-            "Kazakhstan",
-            "Kenya",
-            "Kiribati",
-            "Korea North",
-            "Korea South",
-            "Kosovo",
-            "Kuwait",
-            "Kyrgyzstan",
-            "Laos",
-            "Latvia",
-            "Lebanon",
-            "Lesotho",
-            "Liberia",
-            "Libya",
-            "Liechtenstein",
-            "Lithuania",
-            "Luxembourg",
-            "Macedonia",
-            "Madagascar",
-            "Malawi",
-            "Malaysia",
-            "Maldives",
-            "Mali",
-            "Malta",
-            "Marshall Islands",
-            "Mauritania",
-            "Mauritius",
-            "Mexico",
-            "Micronesia",
-            "Moldova",
-            "Monaco",
-            "Mongolia",
-            "Montenegro",
-            "Morocco",
-            "Mozambique",
-            "Myanmar, {Burma}",
-            "Namibia",
-            "Nauru",
-            "Nepal",
-            "Netherlands",
-            "New Zealand",
-            "Nicaragua",
-            "Niger",
-            "Nigeria",
-            "Norway",
-            "Oman",
-            "Pakistan",
-            "Palau",
-            "Panama",
-            "Papua New Guinea",
-            "Paraguay",
-            "Peru",
-            "Philippines",
-            "Poland",
-            "Portugal",
-            "Qatar",
-            "Romania",
-            "Russian Federation",
-            "Rwanda",
-            "St Kitts & Nevis",
-            "St Lucia",
-            "Saint Vincent & the Grenadines",
-            "Samoa",
-            "San Marino",
-            "Sao Tome & Principe",
-            "Saudi Arabia",
-            "Senegal",
-            "Serbia",
-            "Seychelles",
-            "Sierra Leone",
-            "Singapore",
-            "Slovakia",
-            "Slovenia",
-            "Solomon Islands",
-            "Somalia",
-            "South Africa",
-            "South Sudan",
-            "Spain",
-            "Sri Lanka",
-            "Sudan",
-            "Suriname",
-            "Swaziland",
-            "Sweden",
-            "Switzerland",
-            "Syria",
-            "Taiwan",
-            "Tajikistan",
-            "Tanzania",
-            "Thailand",
-            "Togo",
-            "Tonga",
-            "Trinidad & Tobago",
-            "Tunisia",
-            "Turkey",
-            "Turkmenistan",
-            "Tuvalu",
-            "Uganda",
-            "Ukraine",
-            "United Arab Emirates",
-            "United Kingdom",
-            "United States",
-            "Uruguay",
-            "Uzbekistan",
-            "Vanuatu",
-            "Vatican City",
-            "Venezuela",
-            "Vietnam",
-            "Yemen",
-            "Zambia",
-            "Zimbabwe"});
-            this.comboBox3.Location = new System.Drawing.Point(138, 242);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(210, 30);
-            this.comboBox3.TabIndex = 15;
-            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // groupBox5
             // 
@@ -1231,7 +997,8 @@
             // buttonX9
             // 
             this.buttonX9.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX9.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX9.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX9.ImageTextSpacing = 5;
             this.buttonX9.Location = new System.Drawing.Point(1055, 539);
             this.buttonX9.Name = "buttonX9";
             this.buttonX9.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor();
@@ -1392,8 +1159,6 @@
             this.groupBox3.Controls.Add(this.textBox29);
             this.groupBox3.Controls.Add(this.label18);
             this.groupBox3.Controls.Add(this.label19);
-            this.groupBox3.Controls.Add(this.label28);
-            this.groupBox3.Controls.Add(this.comboBox4);
             this.groupBox3.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(25, 80);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
@@ -1518,240 +1283,14 @@
             this.label19.TabIndex = 18;
             this.label19.Text = "City";
             // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.BackColor = System.Drawing.Color.Transparent;
-            this.label28.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label28.Location = new System.Drawing.Point(14, 242);
-            this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(71, 22);
-            this.label28.TabIndex = 11;
-            this.label28.Text = "Country";
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.AllowDrop = true;
-            this.comboBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.comboBox4.DropDownHeight = 120;
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.IntegralHeight = false;
-            this.comboBox4.Items.AddRange(new object[] {
-            "Afghanistan",
-            "Albania",
-            "Algeria",
-            "Andorra",
-            "Angola",
-            "Antigua & Deps",
-            "Argentina",
-            "Armenia",
-            "Australia",
-            "Austria",
-            "Azerbaijan",
-            "Bahamas",
-            "Bahrain",
-            "Bangladesh",
-            "Barbados",
-            "Belarus",
-            "Belgium",
-            "Belize",
-            "Benin",
-            "Bhutan",
-            "Bolivia",
-            "Bosnia Herzegovina",
-            "Botswana",
-            "Brazil",
-            "Brunei",
-            "Bulgaria",
-            "Burkina",
-            "Burundi",
-            "Cambodia",
-            "Cameroon",
-            "Canada",
-            "Cape Verde",
-            "Central African Rep",
-            "Chad",
-            "Chile",
-            "China",
-            "Colombia",
-            "Comoros",
-            "Congo",
-            "Congo {Democratic Rep}",
-            "Costa Rica",
-            "Croatia",
-            "Cuba",
-            "Cyprus",
-            "Czech Republic",
-            "Denmark",
-            "Djibouti",
-            "Dominica",
-            "Dominican Republic",
-            "East Timor",
-            "Ecuador",
-            "Egypt",
-            "El Salvador",
-            "Equatorial Guinea",
-            "Eritrea",
-            "Estonia",
-            "Ethiopia",
-            "Fiji",
-            "Finland",
-            "France",
-            "Gabon",
-            "Gambia",
-            "Georgia",
-            "Germany",
-            "Ghana",
-            "Greece",
-            "Grenada",
-            "Guatemala",
-            "Guinea",
-            "Guinea-Bissau",
-            "Guyana",
-            "Haiti",
-            "Honduras",
-            "Hungary",
-            "Iceland",
-            "India",
-            "Indonesia",
-            "Iran",
-            "Iraq",
-            "Ireland {Republic}",
-            "Israel",
-            "Italy",
-            "Ivory Coast",
-            "Jamaica",
-            "Japan",
-            "Jordan",
-            "Kazakhstan",
-            "Kenya",
-            "Kiribati",
-            "Korea North",
-            "Korea South",
-            "Kosovo",
-            "Kuwait",
-            "Kyrgyzstan",
-            "Laos",
-            "Latvia",
-            "Lebanon",
-            "Lesotho",
-            "Liberia",
-            "Libya",
-            "Liechtenstein",
-            "Lithuania",
-            "Luxembourg",
-            "Macedonia",
-            "Madagascar",
-            "Malawi",
-            "Malaysia",
-            "Maldives",
-            "Mali",
-            "Malta",
-            "Marshall Islands",
-            "Mauritania",
-            "Mauritius",
-            "Mexico",
-            "Micronesia",
-            "Moldova",
-            "Monaco",
-            "Mongolia",
-            "Montenegro",
-            "Morocco",
-            "Mozambique",
-            "Myanmar, {Burma}",
-            "Namibia",
-            "Nauru",
-            "Nepal",
-            "Netherlands",
-            "New Zealand",
-            "Nicaragua",
-            "Niger",
-            "Nigeria",
-            "Norway",
-            "Oman",
-            "Pakistan",
-            "Palau",
-            "Panama",
-            "Papua New Guinea",
-            "Paraguay",
-            "Peru",
-            "Philippines",
-            "Poland",
-            "Portugal",
-            "Qatar",
-            "Romania",
-            "Russian Federation",
-            "Rwanda",
-            "St Kitts & Nevis",
-            "St Lucia",
-            "Saint Vincent & the Grenadines",
-            "Samoa",
-            "San Marino",
-            "Sao Tome & Principe",
-            "Saudi Arabia",
-            "Senegal",
-            "Serbia",
-            "Seychelles",
-            "Sierra Leone",
-            "Singapore",
-            "Slovakia",
-            "Slovenia",
-            "Solomon Islands",
-            "Somalia",
-            "South Africa",
-            "South Sudan",
-            "Spain",
-            "Sri Lanka",
-            "Sudan",
-            "Suriname",
-            "Swaziland",
-            "Sweden",
-            "Switzerland",
-            "Syria",
-            "Taiwan",
-            "Tajikistan",
-            "Tanzania",
-            "Thailand",
-            "Togo",
-            "Tonga",
-            "Trinidad & Tobago",
-            "Tunisia",
-            "Turkey",
-            "Turkmenistan",
-            "Tuvalu",
-            "Uganda",
-            "Ukraine",
-            "United Arab Emirates",
-            "United Kingdom",
-            "United States",
-            "Uruguay",
-            "Uzbekistan",
-            "Vanuatu",
-            "Vatican City",
-            "Venezuela",
-            "Vietnam",
-            "Yemen",
-            "Zambia",
-            "Zimbabwe"});
-            this.comboBox4.Location = new System.Drawing.Point(138, 242);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(210, 30);
-            this.comboBox4.TabIndex = 15;
-            // 
             // supplierManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1205, 650);
-            this.Controls.Add(this.managesupplierpanel);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.managesupplierpanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MinimizeBox = false;
             this.Name = "supplierManagement";
@@ -1794,8 +1333,6 @@
         private System.Windows.Forms.TextBox textBox35;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label38;
-        public System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.TextBox textBox19;
@@ -1872,7 +1409,5 @@
         private System.Windows.Forms.TextBox textBox29;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label28;
-        public System.Windows.Forms.ComboBox comboBox4;
     }
 }

@@ -583,7 +583,7 @@
             // dataGridView5
             // 
             this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Location = new System.Drawing.Point(682, 381);
+            this.dataGridView5.Location = new System.Drawing.Point(493, 382);
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.Size = new System.Drawing.Size(604, 158);
             this.dataGridView5.TabIndex = 21;
@@ -605,6 +605,7 @@
             this.buttonX13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonX13.FocusCuesEnabled = false;
             this.buttonX13.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX13.ImageTextSpacing = 5;
             this.buttonX13.Location = new System.Drawing.Point(495, 73);
             this.buttonX13.Name = "buttonX13";
             this.buttonX13.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(0, 20, 0, 20);
@@ -750,9 +751,9 @@
             this.Controls.Add(this.buttonX6);
             this.Controls.Add(this.buttonX5);
             this.Controls.Add(this.buttonX4);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Name = "supplierMaterial_orders";
             this.Text = "supplierMaterial_orders";
             this.Load += new System.EventHandler(this.supplierMaterial_orders_Load);
