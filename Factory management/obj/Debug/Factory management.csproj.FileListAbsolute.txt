@@ -1,39 +1,40 @@
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\Factory management.exe
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\Factory management.pdb
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\DevComponents.DotNetBar.Layout.dll
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\MySql.Data.dll
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\DevComponents.DotNetBar.Layout.xml
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\DevComponents.DotNetBar2.xml
-C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.login.resources
-C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.Properties.Resources.resources
-C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.SysMain.resources
-C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.Utitlity.resources
-C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory management.csproj.GenerateResource.Cache
-C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory management.exe
-C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory management.pdb
-C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\supplier_management_ganesh.supp.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\MySql.Data.xml
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory management.csprojResolveAssemblyReference.cache
-C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.supplierManagement.resources
-C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.Supplier_navigation.resources
-C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.supplierMaterial_orders.resources
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.addEdit_vehicles.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.add_bill.resources
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.DeliveryShedule.resources
-C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.repairRequest.resources
-C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory management.exe.licenses
-C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.travel_expenses.resources
-C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.transport_shedule.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.EditUser.resources
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.Edit_machine.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\supplier_management_ganesh.supp.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.login.resources
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.machines.resources
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.Maintenance_machines.resources
-C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.vehicleRepairs_shedule.resources
-C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\DevComponents.DotNetBar.Layout.dll
-C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\DevComponents.DotNetBar.Layout.xml
-C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.add_bill.resources
-C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.EditUser.resources
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.productAgent_payment.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.Properties.Resources.resources
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.rawMetirialPayments.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.repairRequest.resources
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.Repair_expenses.resources
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.serviceCenter.resources
-C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.users.resources
-C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.Vehicle_expenses.resources
-C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\MySql.Data.dll
-C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\MySql.Data.xml
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.splash.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.supplierManagement.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.supplierMaterial_orders.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.Supplier_navigation.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.SysMain.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.transport_shedule.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.travel_expenses.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.users.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.Utitlity.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.vehicleRepairs_shedule.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.Vehicle_expenses.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory management.csproj.GenerateResource.Cache
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory management.exe.licenses
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory management.exe
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory management.pdb
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.Main.resources

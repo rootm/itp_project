@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.splash_status = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // timer1
@@ -41,19 +42,31 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(322, 209);
+            this.progressBar1.Location = new System.Drawing.Point(12, 226);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(471, 23);
+            this.progressBar1.Size = new System.Drawing.Size(275, 5);
             this.progressBar1.TabIndex = 0;
+            // 
+            // splash_status
+            // 
+            this.splash_status.AutoSize = true;
+            this.splash_status.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.splash_status.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(194)))), ((int)(((byte)(110)))));
+            this.splash_status.Location = new System.Drawing.Point(8, 202);
+            this.splash_status.Name = "splash_status";
+            this.splash_status.Size = new System.Drawing.Size(75, 20);
+            this.splash_status.TabIndex = 1;
+            this.splash_status.Text = "gfhfghfgh";
             // 
             // splash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Maroon;
-            this.BackgroundImage = global::Factory_management.Properties.Resources.splash4;
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::Factory_management.Properties.Resources.spl1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(826, 289);
+            this.ClientSize = new System.Drawing.Size(648, 243);
+            this.Controls.Add(this.splash_status);
             this.Controls.Add(this.progressBar1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -61,7 +74,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "splash";
             this.TransparencyKey = System.Drawing.Color.DimGray;
+            this.Load += new System.EventHandler(this.splash_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -69,5 +84,6 @@
 
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label splash_status;
     }
 }

@@ -14,7 +14,7 @@ namespace Factory_management
     public partial class login : Form
     {
         DBAccess db = new DBAccess();
-
+        int level = 0;
 
         public login()
         {
@@ -33,7 +33,11 @@ namespace Factory_management
             //textBox1.Text = x.ToString();
             if (validate_user(user_name.Text, password.Text)) {
                 MessageBox.Show("sdfsdf");
+                ((SysMain)this.MdiParent).logUser(level);
+
             }
+
+            this.Close();
 
 
         }
@@ -51,6 +55,7 @@ namespace Factory_management
                 MySqlDataReader login = cmd.ExecuteReader();
                 if (login.Read())
                 {
+                    level= login.GetInt16("user_level");
                     db.closeconnect();
                     return true;
                 }
@@ -64,5 +69,9 @@ namespace Factory_management
             return false;
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

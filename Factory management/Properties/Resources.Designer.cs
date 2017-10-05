@@ -223,6 +223,26 @@ namespace Factory_management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap download {
+            get {
+                object obj = ResourceManager.GetObject("download", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download1 {
+            get {
+                object obj = ResourceManager.GetObject("download1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Edit_pending_orders {
             get {
                 object obj = ResourceManager.GetObject("Edit_pending_orders", resourceCulture);
@@ -256,6 +276,16 @@ namespace Factory_management.Properties {
         internal static System.Drawing.Bitmap finance {
             get {
                 object obj = ResourceManager.GetObject("finance", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lg_rotate_palette_loader {
+            get {
+                object obj = ResourceManager.GetObject("lg.rotate-palette-loader", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -366,6 +396,26 @@ namespace Factory_management.Properties {
         internal static System.Drawing.Bitmap shopping_cart_ {
             get {
                 object obj = ResourceManager.GetObject("shopping-cart ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap spl {
+            get {
+                object obj = ResourceManager.GetObject("spl", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap spl1 {
+            get {
+                object obj = ResourceManager.GetObject("spl1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

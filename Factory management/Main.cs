@@ -10,16 +10,19 @@ using System.Windows.Forms;
 
 namespace Factory_management
 {
-    public partial class users : Form
+    public partial class Main : Form
     {
-        public users()
+        public Main()
         {
             InitializeComponent();
         }
 
-        private void users_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            login lg = new login();
+            lg.TopLevel = false;
+            this.panel1.Controls.Add(lg);
+            lg.Show();
         }
     }
 }

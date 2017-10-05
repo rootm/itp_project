@@ -19,7 +19,7 @@ namespace Factory_management
             InitializeComponent();
         }
 
-        SysMain mainfrm = new SysMain();
+        Main mainfrm = new Main();
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -29,6 +29,17 @@ namespace Factory_management
             {
                 if (progressBar1.Value != 100)
                 {
+                    if (x < 15)
+                    {
+                        splash_status.Text = "Connecting To Database Servers";
+                    }
+                    else if (x < 30)
+                    {
+                        splash_status.Text = "Database Connected";
+                    }
+                    else {
+                        splash_status.Text = "Loading Modules.... "+ x+"%";
+                    }
                     progressBar1.Value += 1;
                     ++x;
                 }
@@ -43,7 +54,7 @@ namespace Factory_management
                 else
                 {
                     //MessageBox.Show(x.ToString());
-                   mainfrm.Show();
+                    mainfrm.Show();
                   this.Hide();
                 }
             }
@@ -53,6 +64,11 @@ namespace Factory_management
             
             }
            
+        }
+
+        private void splash_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

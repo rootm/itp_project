@@ -97,6 +97,12 @@
     <Compile Include="machines.Designer.cs">
       <DependentUpon>machines.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
     <Compile Include="Maintenance_machines.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,7 +141,6 @@
     <Compile Include="serviceCenter.Designer.cs">
       <DependentUpon>serviceCenter.cs</DependentUpon>
     </Compile>
-    <Compile Include="sideMenu.cs" />
     <Compile Include="splash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="machines.resx">
       <DependentUpon>machines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Maintenance_machines.resx">
       <DependentUpon>Maintenance_machines.cs</DependentUpon>
@@ -435,6 +443,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\splash4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lg.rotate-palette-loader.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spl1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
