@@ -31,13 +31,17 @@ namespace Factory_management
 
             //int x = db.connect();
             //textBox1.Text = x.ToString();
-            if (validate_user(user_name.Text, password.Text)) {
+            if (validate_user(user_name.Text, password.Text))
+            {
                 MessageBox.Show("sdfsdf");
-                ((SysMain)this.MdiParent).logUser(level);
+                // ((SysMain)this.MdiParent).logUser(level);
 
             }
+            else {
+                status_label.Visible = true;
+            }
 
-            this.Close();
+          //  this.Close();
 
 
         }
@@ -73,5 +77,35 @@ namespace Factory_management
         {
             Application.Exit();
         }
+
+        private void user_name_GotFocus(object sender, EventArgs e)
+        {
+            userName_panel.BackColor = Color.FromArgb(200,224,228,208);
+            userName_focus.BackColor = Color.FromArgb(255, 1, 194, 110);
+
+            password_focus.BackColor = Color.White;
+            password_panel.BackColor = Color.White;
+
+            status_label.Visible = false;
+
+        }
+
+        private void password_Enter(object sender, EventArgs e)
+        {
+            userName_panel.BackColor = Color.White;
+            userName_focus.BackColor = Color.White;
+
+            password_focus.BackColor = Color.FromArgb(255, 1, 194, 110);
+            password_panel.BackColor = Color.FromArgb(200, 224, 228, 208);
+
+            status_label.Visible = false;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+       
     }
 }
