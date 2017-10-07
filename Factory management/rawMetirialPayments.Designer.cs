@@ -51,7 +51,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(22, 28);
+            this.label19.Location = new System.Drawing.Point(22, 18);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(320, 28);
             this.label19.TabIndex = 32;
@@ -65,7 +65,7 @@
             this.buttonX13.FocusCuesEnabled = false;
             this.buttonX13.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonX13.ImageTextSpacing = 5;
-            this.buttonX13.Location = new System.Drawing.Point(503, 82);
+            this.buttonX13.Location = new System.Drawing.Point(503, 71);
             this.buttonX13.Name = "buttonX13";
             this.buttonX13.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(0, 20, 0, 20);
             this.buttonX13.Size = new System.Drawing.Size(127, 59);
@@ -82,7 +82,7 @@
             this.buttonX14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonX14.FocusCuesEnabled = false;
             this.buttonX14.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX14.Location = new System.Drawing.Point(388, 82);
+            this.buttonX14.Location = new System.Drawing.Point(388, 71);
             this.buttonX14.Name = "buttonX14";
             this.buttonX14.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(20, 0, 20, 0);
             this.buttonX14.Size = new System.Drawing.Size(115, 59);
@@ -96,7 +96,7 @@
             // 
             this.comboBox3.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(151, 120);
+            this.comboBox3.Location = new System.Drawing.Point(151, 109);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(200, 30);
             this.comboBox3.TabIndex = 29;
@@ -104,7 +104,7 @@
             // dateTimePicker3
             // 
             this.dateTimePicker3.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker3.Location = new System.Drawing.Point(151, 82);
+            this.dateTimePicker3.Location = new System.Drawing.Point(151, 71);
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.Size = new System.Drawing.Size(200, 29);
             this.dateTimePicker3.TabIndex = 28;
@@ -113,7 +113,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(23, 82);
+            this.label21.Location = new System.Drawing.Point(23, 71);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(95, 22);
             this.label21.TabIndex = 27;
@@ -123,7 +123,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(23, 122);
+            this.label22.Location = new System.Drawing.Point(23, 111);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(112, 22);
             this.label22.TabIndex = 26;
@@ -142,7 +142,7 @@
             // dataGridView6
             // 
             this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Location = new System.Drawing.Point(26, 194);
+            this.dataGridView6.Location = new System.Drawing.Point(26, 183);
             this.dataGridView6.Name = "dataGridView6";
             this.dataGridView6.Size = new System.Drawing.Size(604, 150);
             this.dataGridView6.TabIndex = 24;
@@ -151,7 +151,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(27, 555);
+            this.label24.Location = new System.Drawing.Point(27, 544);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(148, 22);
             this.label24.TabIndex = 38;
@@ -161,7 +161,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(24, 512);
+            this.label15.Location = new System.Drawing.Point(24, 501);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(150, 22);
             this.label15.TabIndex = 37;
@@ -171,7 +171,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(23, 431);
+            this.label16.Location = new System.Drawing.Point(23, 420);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(298, 22);
             this.label16.TabIndex = 36;
@@ -181,7 +181,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(24, 471);
+            this.label17.Location = new System.Drawing.Point(24, 460);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(147, 22);
             this.label17.TabIndex = 35;
@@ -191,7 +191,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(23, 393);
+            this.label18.Location = new System.Drawing.Point(23, 382);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(216, 22);
             this.label18.TabIndex = 34;
@@ -201,7 +201,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(23, 359);
+            this.label20.Location = new System.Drawing.Point(23, 348);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(148, 22);
             this.label20.TabIndex = 33;
@@ -217,7 +217,7 @@
             this.buttonX12.Image = global::Factory_management.Properties.Resources.shopping_cart_;
             this.buttonX12.ImageFixedSize = new System.Drawing.Size(50, 50);
             this.buttonX12.ImageTextSpacing = 10;
-            this.buttonX12.Location = new System.Drawing.Point(417, 595);
+            this.buttonX12.Location = new System.Drawing.Point(417, 584);
             this.buttonX12.Name = "buttonX12";
             this.buttonX12.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
             this.buttonX12.Size = new System.Drawing.Size(213, 59);
@@ -230,6 +230,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(641, 662);
+            this.ControlBox = false;
             this.Controls.Add(this.buttonX12);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label15);
@@ -246,6 +247,8 @@
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.dataGridView6);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "rawMetirialPayments";
             this.Text = "rawMetirialPayments";
             this.Load += new System.EventHandler(this.rawMetirialPayments_Load);

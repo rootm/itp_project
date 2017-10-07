@@ -213,6 +213,36 @@ namespace Factory_management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap check1 {
+            get {
+                object obj = ResourceManager.GetObject("check1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap check2 {
+            get {
+                object obj = ResourceManager.GetObject("check2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap check3 {
+            get {
+                object obj = ResourceManager.GetObject("check3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap construction {
             get {
                 object obj = ResourceManager.GetObject("construction", resourceCulture);
@@ -393,6 +423,16 @@ namespace Factory_management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap material {
+            get {
+                object obj = ResourceManager.GetObject("material", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap open_book {
             get {
                 object obj = ResourceManager.GetObject("open-book", resourceCulture);
@@ -476,6 +516,16 @@ namespace Factory_management.Properties {
         internal static System.Drawing.Bitmap repair1 {
             get {
                 object obj = ResourceManager.GetObject("repair1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap repairIco {
+            get {
+                object obj = ResourceManager.GetObject("repairIco", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -696,6 +746,16 @@ namespace Factory_management.Properties {
         internal static System.Drawing.Bitmap vehicle_update {
             get {
                 object obj = ResourceManager.GetObject("vehicle_update", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vehiclePay {
+            get {
+                object obj = ResourceManager.GetObject("vehiclePay", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

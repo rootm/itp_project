@@ -233,7 +233,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(620, 578);
+            this.ControlBox = false;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.buttonX4);
             this.Controls.Add(this.buttonX3);
@@ -246,6 +248,7 @@
             this.Controls.Add(this.buttonX1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "productAgent_payment";
             this.Text = "productAgent_payment";
             this.Load += new System.EventHandler(this.productAgent_payment_Load);

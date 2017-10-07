@@ -39,14 +39,14 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -168,6 +168,31 @@
             this.dataGridView1.Size = new System.Drawing.Size(624, 150);
             this.dataGridView1.TabIndex = 12;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Machine ID";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Machine Type";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Date of Repair";
+            this.Column3.Name = "Column3";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Type of Repair";
+            this.Column5.Name = "Column5";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Repair Description";
+            this.Column4.Name = "Column4";
+            // 
             // comboBox1
             // 
             this.comboBox1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -210,31 +235,6 @@
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Machine ID";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Machine Type";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Date of Repair";
-            this.Column3.Name = "Column3";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Type of Repair";
-            this.Column5.Name = "Column5";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Repair Description";
-            this.Column4.Name = "Column4";
-            // 
             // buttonX2
             // 
             this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
@@ -255,6 +255,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(655, 575);
+            this.ControlBox = false;
             this.Controls.Add(this.buttonX2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);

@@ -38,3 +38,13 @@ C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factor
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory management.exe
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory management.pdb
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.Main.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\LiveCharts.dll
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\LiveCharts.pdb
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\LiveCharts.xml
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.finance_home.resources

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.buttonX8 = new DevComponents.DotNetBar.ButtonX();
             this.label14 = new System.Windows.Forms.Label();
             this.buttonX7 = new DevComponents.DotNetBar.ButtonX();
@@ -50,10 +51,9 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -80,11 +80,22 @@
             this.panel1.Controls.Add(this.comboBox2);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Location = new System.Drawing.Point(2, 2);
+            this.panel1.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Location = new System.Drawing.Point(2, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(873, 514);
+            this.panel1.Size = new System.Drawing.Size(873, 504);
             this.panel1.TabIndex = 12;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Factory_management.Properties.Resources.construction;
+            this.pictureBox2.Location = new System.Drawing.Point(17, 10);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(81, 73);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 29;
+            this.pictureBox2.TabStop = false;
             // 
             // buttonX8
             // 
@@ -102,10 +113,11 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(194)))), ((int)(((byte)(110)))));
             this.label14.Location = new System.Drawing.Point(104, 35);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(203, 24);
+            this.label14.Size = new System.Drawing.Size(243, 32);
             this.label14.TabIndex = 24;
             this.label14.Text = "Edit Utility Bill Details";
             // 
@@ -211,50 +223,55 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.label8.Location = new System.Drawing.Point(22, 458);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(85, 22);
+            this.label8.Size = new System.Drawing.Size(98, 25);
             this.label8.TabIndex = 16;
             this.label8.Text = "Attach Bill";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.label9.Location = new System.Drawing.Point(480, 406);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(97, 22);
+            this.label9.Size = new System.Drawing.Size(110, 25);
             this.label9.TabIndex = 15;
             this.label9.Text = "Bill Amount";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.label10.Location = new System.Drawing.Point(481, 345);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(50, 22);
+            this.label10.Size = new System.Drawing.Size(55, 25);
             this.label10.TabIndex = 14;
             this.label10.Text = "Units";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.label11.Location = new System.Drawing.Point(22, 402);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(86, 22);
+            this.label11.Size = new System.Drawing.Size(97, 25);
             this.label11.TabIndex = 13;
             this.label11.Text = "Bill Month";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.label12.Location = new System.Drawing.Point(22, 347);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(72, 22);
+            this.label12.Size = new System.Drawing.Size(79, 25);
             this.label12.TabIndex = 12;
             this.label12.Text = "Bill Type";
             // 
@@ -286,45 +303,40 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(381, 103);
+            this.label6.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.label6.Location = new System.Drawing.Point(384, 99);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 22);
+            this.label6.Size = new System.Drawing.Size(97, 25);
             this.label6.TabIndex = 8;
             this.label6.Text = "Bill Month";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.label7.Location = new System.Drawing.Point(22, 99);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(72, 22);
+            this.label7.Size = new System.Drawing.Size(79, 25);
             this.label7.TabIndex = 7;
             this.label7.Text = "Bill Type";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Factory_management.Properties.Resources.construction;
-            this.pictureBox2.Location = new System.Drawing.Point(17, 10);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(81, 73);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 29;
-            this.pictureBox2.TabStop = false;
             // 
             // Utitlity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(883, 512);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Utitlity";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Utitlity";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }

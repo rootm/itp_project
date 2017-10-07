@@ -49,10 +49,11 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(99, 45);
+            this.label13.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(194)))), ((int)(((byte)(110)))));
+            this.label13.Location = new System.Drawing.Point(99, 30);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(185, 24);
+            this.label13.Size = new System.Drawing.Size(219, 32);
             this.label13.TabIndex = 27;
             this.label13.Text = "Add New Utility Bill";
             // 
@@ -108,50 +109,50 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(32, 351);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 22);
+            this.label5.Size = new System.Drawing.Size(98, 25);
             this.label5.TabIndex = 19;
             this.label5.Text = "Attach Bill";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(31, 291);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 22);
+            this.label4.Size = new System.Drawing.Size(110, 25);
             this.label4.TabIndex = 18;
             this.label4.Text = "Bill Amount";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(31, 234);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 22);
+            this.label3.Size = new System.Drawing.Size(55, 25);
             this.label3.TabIndex = 17;
             this.label3.Text = "Units";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(31, 174);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 22);
+            this.label2.Size = new System.Drawing.Size(97, 25);
             this.label2.TabIndex = 16;
             this.label2.Text = "Bill Month";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(31, 119);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 22);
+            this.label1.Size = new System.Drawing.Size(79, 25);
             this.label1.TabIndex = 15;
             this.label1.Text = "Bill Type";
             // 
@@ -167,6 +168,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(459, 118);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(322, 253);
@@ -192,6 +194,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(811, 403);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label13);
