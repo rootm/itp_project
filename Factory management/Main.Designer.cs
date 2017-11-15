@@ -47,7 +47,6 @@
             this.homePanel = new System.Windows.Forms.Panel();
             this.homeButton = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.agent_menu = new System.Windows.Forms.Button();
             this.vehicle_menu = new System.Windows.Forms.Button();
             this.supplier_menu = new System.Windows.Forms.Button();
@@ -56,6 +55,7 @@
             this.finance_menu = new System.Windows.Forms.Button();
             this.users_menu = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.financial_panel.SuspendLayout();
@@ -139,7 +139,7 @@
             this.addBillButton.Name = "addBillButton";
             this.addBillButton.Size = new System.Drawing.Size(133, 72);
             this.addBillButton.TabIndex = 0;
-            this.addBillButton.Text = "Add Utility Bills";
+            this.addBillButton.Text = "Utility Bills";
             this.addBillButton.UseVisualStyleBackColor = false;
             this.addBillButton.Click += new System.EventHandler(this.addBillButton_Click);
             // 
@@ -150,6 +150,7 @@
             this.editBillPanel.Name = "editBillPanel";
             this.editBillPanel.Size = new System.Drawing.Size(133, 79);
             this.editBillPanel.TabIndex = 1;
+            this.editBillPanel.Visible = false;
             // 
             // editBillButton
             // 
@@ -317,17 +318,6 @@
             this.panel2.Size = new System.Drawing.Size(132, 676);
             this.panel2.TabIndex = 2;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.label1.Location = new System.Drawing.Point(13, 59);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Dumidu Books";
-            // 
             // agent_menu
             // 
             this.agent_menu.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -467,6 +457,17 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
+            this.label1.Location = new System.Drawing.Point(13, 59);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(107, 20);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Dumidu Books";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -477,6 +478,8 @@
             this.IsMdiContainer = true;
             this.Name = "Main";
             this.Text = "Main";
+            this.TopMost = true;
+            this.Load += new System.EventHandler(this.Main_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.financial_panel.ResumeLayout(false);

@@ -14,6 +14,8 @@ namespace Factory_management
     public partial class login : Form
     {
         DBAccess db = new DBAccess();
+       
+      //  public static Form lgc;
         int level = 0;
 
         public login()
@@ -23,7 +25,7 @@ namespace Factory_management
 
         private void login_Load(object sender, EventArgs e)
         {
-
+     //       lg = this;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -33,15 +35,20 @@ namespace Factory_management
             //textBox1.Text = x.ToString();
             if (validate_user(user_name.Text, password.Text))
             {
-                MessageBox.Show("sdfsdf");
+                // MessageBox.Show("sdfsdf");
                 // ((SysMain)this.MdiParent).logUser(level);
+                this.Visible = false;
+                Main main = new Main();
+                main.Show();
+              
 
+               // this.Close();
             }
             else {
                 status_label.Visible = true;
             }
 
-          //  this.Close();
+        //    this.Hide();
 
 
         }
@@ -73,10 +80,7 @@ namespace Factory_management
             return false;
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+      
 
         private void user_name_GotFocus(object sender, EventArgs e)
         {

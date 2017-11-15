@@ -95,6 +95,39 @@ namespace Factory_management
             }
         }
 
+        void allSupplier()
+        {
+
+            meterialOrder_grid.Rows.Clear();
+            if (db.connect())
+            {
+                MySqlCommand cmd = new MySqlCommand();
+
+                cmd.CommandText = "SELECT m.Mname,mo.MorderId,mo.quantity,mo.Odate,s.supid,s.Sname,s.Uprice FROM morder mo,material m,supplier s where mo.status='pending' AND s.supid=mo.supid AND m.mid=mo.mid;";
+
+                cmd.Connection = db.connection;
+                    MySqlDataReader login = cmd.ExecuteReader();
+                    while (login.Read())
+                    {
+
+                        meterialOrder_grid.Rows.Add(login.GetString("MorderId"), login.GetString("Mname"), login.GetString("quantity"), login.GetString("Odate"), login.GetString("supid"), login.GetString("Sname"), login.GetString("Uprice"), login.GetString("Uprice"));
+
+                    }
+
+                }
+               
+
+                
+
+
+
+                db.closeconnect();
+
+
+
+            
+        }
+
         void getSupplierDetails(string id,int qnt) {
             if (db.connect())
             {
@@ -175,16 +208,41 @@ namespace Factory_management
 
         private void meterialOrder_grid_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            getSupplierDetails(meterialOrder_grid.Rows[meterialOrder_grid.SelectedRows[0].Index].Cells[4].Value.ToString(), Int32.Parse(meterialOrder_grid.Rows[meterialOrder_grid.SelectedRows[0].Index].Cells[2].Value.ToString()));
+           
+
         }
 
         private void aproveButton_Click(object sender, EventArgs e)
         {
 
             if (approveOrder(meterialOrder_grid.Rows[meterialOrder_grid.SelectedRows[0].Index].Cells[0].Value.ToString())) {
-                MessageBox.Show("sadasd");
+                MessageBox.Show("Approve Successful");
                 meterialOrder_grid.Rows.RemoveAt(meterialOrder_grid.SelectedRows[0].Index);
                 meterialOrder_grid.Refresh();
+            }
+        }
+
+        private void viewAll_Click(object sender, EventArgs e)
+        {
+            allSupplier();
+        }
+
+        private void meterialOrder_grid_SelectionChanged(object sender, EventArgs e)
+        {
+            if (meterialOrder_grid.SelectedRows.Count > 0)
+            {
+                getSupplierDetails(meterialOrder_grid.Rows[meterialOrder_grid.SelectedRows[0].Index].Cells[4].Value.ToString(), Int32.Parse(meterialOrder_grid.Rows[meterialOrder_grid.SelectedRows[0].Index].Cells[2].Value.ToString()));
+
+                approveButton.Enabled = true;
+                //confirm_button.Enabled = false;
+            }
+            else {
+                approveButton.Enabled = false;
+                supplierID_label.Text = "Supplier ID             : " ;
+                supplierName_label.Text = "Supplier Name      : " ;
+                supplierAccount_label.Text = "Supplier Account : " ;
+                unitPrice_label.Text = "Unit Price (LKR)     : ";
+                total_lable.Text = "Grand Total           : ";
             }
         }
     }

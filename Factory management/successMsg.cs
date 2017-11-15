@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace Factory_management
 {
-    public partial class add_bill : Form
+    public partial class successMsg : Form
     {
-        public add_bill()
+        public successMsg()
         {
             InitializeComponent();
         }
-
-        private void add_bill_Load(object sender, EventArgs e)
-        {
-
-        }
-
-
     }
 }

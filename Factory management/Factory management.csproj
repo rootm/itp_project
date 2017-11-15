@@ -96,6 +96,12 @@
     <Compile Include="Edit_machine.Designer.cs">
       <DependentUpon>Edit_machine.cs</DependentUpon>
     </Compile>
+    <Compile Include="errorMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errorMsg.Designer.cs">
+      <DependentUpon>errorMsg.cs</DependentUpon>
+    </Compile>
     <Compile Include="finance_home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,12 @@
     </Compile>
     <Compile Include="Form1.designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="imageDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="imageDialog.Designer.cs">
+      <DependentUpon>imageDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
@@ -169,6 +181,12 @@
     </Compile>
     <Compile Include="splash.Designer.cs">
       <DependentUpon>splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="successMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="successMsg.Designer.cs">
+      <DependentUpon>successMsg.cs</DependentUpon>
     </Compile>
     <Compile Include="supplierManagement.cs">
       <SubType>Form</SubType>
@@ -245,11 +263,17 @@
     <EmbeddedResource Include="Edit_machine.resx">
       <DependentUpon>Edit_machine.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="errorMsg.resx">
+      <DependentUpon>errorMsg.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="finance_home.resx">
       <DependentUpon>finance_home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="imageDialog.resx">
+      <DependentUpon>imageDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
@@ -291,6 +315,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="splash.resx">
       <DependentUpon>splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="successMsg.resx">
+      <DependentUpon>successMsg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="supplierManagement.resx">
       <DependentUpon>supplierManagement.cs</DependentUpon>
@@ -548,6 +575,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\repairIco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SUCCESS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ERROR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

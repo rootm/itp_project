@@ -31,9 +31,12 @@ namespace Factory_management
 
         private void users_menu_Click(object sender, EventArgs e)
         {
-            Utitlity lg = new Utitlity();
+            users lg = new users();
             lg.TopLevel = false;
+
+            this.panel4.Controls.Clear();
             this.panel4.Controls.Add(lg);
+            financial_panel.Hide();
             lg.Show();
         }
 
@@ -168,6 +171,19 @@ namespace Factory_management
             this.panel4.Controls.Add(lg);
             lg.Show();
 
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            var frm = Application.OpenForms.Cast<Form>().Where(x => x.Name == "login").FirstOrDefault();
+            if (null != frm)
+            {
+                frm.Close();
+                frm = null;
+            }
+
+            financial_panel.Show();
+            homeButton.PerformClick();
         }
     }
     }

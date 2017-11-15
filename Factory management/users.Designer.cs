@@ -31,22 +31,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
+            this.userName = new System.Windows.Forms.TextBox();
+            this.pass = new System.Windows.Forms.TextBox();
+            this.confirmPass = new System.Windows.Forms.TextBox();
+            this.addUser_button = new DevComponents.DotNetBar.ButtonX();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.userLevel = new System.Windows.Forms.ComboBox();
             this.invalidUser_label = new System.Windows.Forms.Label();
             this.validUser_lable = new System.Windows.Forms.Label();
             this.invalidPassword_lable = new System.Windows.Forms.Label();
             this.validPassword_lable = new System.Windows.Forms.Label();
-            this.validEmp_lable = new System.Windows.Forms.Label();
-            this.invalidEmp_lable = new System.Windows.Forms.Label();
+            this.passCon = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,67 +71,56 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(22, 197);
+            this.label3.Location = new System.Drawing.Point(22, 204);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(149, 22);
             this.label3.TabIndex = 2;
             this.label3.Text = "Confirm Password";
             // 
-            // label4
+            // userName
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(22, 294);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 22);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Employee ID";
+            this.userName.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userName.Location = new System.Drawing.Point(177, 98);
+            this.userName.Name = "userName";
+            this.userName.Size = new System.Drawing.Size(194, 29);
+            this.userName.TabIndex = 4;
+            this.userName.TextChanged += new System.EventHandler(this.userName_TextChanged);
             // 
-            // textBox1
+            // pass
             // 
-            this.textBox1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(177, 98);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 29);
-            this.textBox1.TabIndex = 4;
+            this.pass.Enabled = false;
+            this.pass.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pass.Location = new System.Drawing.Point(177, 150);
+            this.pass.Name = "pass";
+            this.pass.Size = new System.Drawing.Size(194, 29);
+            this.pass.TabIndex = 5;
+            this.pass.TextChanged += new System.EventHandler(this.pass_TextChanged);
             // 
-            // textBox2
+            // confirmPass
             // 
-            this.textBox2.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(177, 150);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(194, 29);
-            this.textBox2.TabIndex = 5;
+            this.confirmPass.Enabled = false;
+            this.confirmPass.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmPass.Location = new System.Drawing.Point(177, 201);
+            this.confirmPass.Name = "confirmPass";
+            this.confirmPass.Size = new System.Drawing.Size(194, 29);
+            this.confirmPass.TabIndex = 6;
+            this.confirmPass.TextChanged += new System.EventHandler(this.confirmPass_TextChanged);
             // 
-            // textBox3
+            // addUser_button
             // 
-            this.textBox3.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(177, 194);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(194, 29);
-            this.textBox3.TabIndex = 6;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(177, 291);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(194, 29);
-            this.textBox4.TabIndex = 7;
-            // 
-            // buttonX1
-            // 
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX1.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX1.Location = new System.Drawing.Point(244, 349);
-            this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Size = new System.Drawing.Size(127, 47);
-            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX1.Symbol = "";
-            this.buttonX1.SymbolColor = System.Drawing.Color.Black;
-            this.buttonX1.TabIndex = 8;
-            this.buttonX1.Text = "Add User";
+            this.addUser_button.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.addUser_button.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.addUser_button.Enabled = false;
+            this.addUser_button.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addUser_button.Location = new System.Drawing.Point(244, 301);
+            this.addUser_button.Name = "addUser_button";
+            this.addUser_button.Size = new System.Drawing.Size(127, 47);
+            this.addUser_button.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.addUser_button.Symbol = "";
+            this.addUser_button.SymbolColor = System.Drawing.Color.Black;
+            this.addUser_button.TabIndex = 8;
+            this.addUser_button.Text = "Add User";
+            this.addUser_button.Click += new System.EventHandler(this.addUser_button_Click);
             // 
             // label5
             // 
@@ -160,20 +146,22 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(22, 245);
+            this.label6.Location = new System.Drawing.Point(22, 252);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(88, 22);
             this.label6.TabIndex = 11;
             this.label6.Text = "User Level";
             // 
-            // comboBox1
+            // userLevel
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(177, 241);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(194, 30);
-            this.comboBox1.TabIndex = 12;
+            this.userLevel.Enabled = false;
+            this.userLevel.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userLevel.FormattingEnabled = true;
+            this.userLevel.Location = new System.Drawing.Point(177, 248);
+            this.userLevel.Name = "userLevel";
+            this.userLevel.Size = new System.Drawing.Size(194, 30);
+            this.userLevel.TabIndex = 12;
+            this.userLevel.SelectedIndexChanged += new System.EventHandler(this.userLevel_SelectedIndexChanged);
             // 
             // invalidUser_label
             // 
@@ -223,54 +211,39 @@
             this.validPassword_lable.Text = "Valid password";
             this.validPassword_lable.Visible = false;
             // 
-            // validEmp_lable
+            // passCon
             // 
-            this.validEmp_lable.AutoSize = true;
-            this.validEmp_lable.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.validEmp_lable.ForeColor = System.Drawing.Color.ForestGreen;
-            this.validEmp_lable.Location = new System.Drawing.Point(272, 274);
-            this.validEmp_lable.Name = "validEmp_lable";
-            this.validEmp_lable.Size = new System.Drawing.Size(99, 17);
-            this.validEmp_lable.TabIndex = 17;
-            this.validEmp_lable.Text = "Valid password";
-            this.validEmp_lable.Visible = false;
-            // 
-            // invalidEmp_lable
-            // 
-            this.invalidEmp_lable.AutoSize = true;
-            this.invalidEmp_lable.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.invalidEmp_lable.ForeColor = System.Drawing.Color.Red;
-            this.invalidEmp_lable.Location = new System.Drawing.Point(259, 274);
-            this.invalidEmp_lable.Name = "invalidEmp_lable";
-            this.invalidEmp_lable.Size = new System.Drawing.Size(112, 17);
-            this.invalidEmp_lable.TabIndex = 18;
-            this.invalidEmp_lable.Text = "Invalid Employee";
-            this.invalidEmp_lable.Visible = false;
+            this.passCon.AutoSize = true;
+            this.passCon.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passCon.ForeColor = System.Drawing.Color.Red;
+            this.passCon.Location = new System.Drawing.Point(244, 182);
+            this.passCon.Name = "passCon";
+            this.passCon.Size = new System.Drawing.Size(127, 17);
+            this.passCon.TabIndex = 17;
+            this.passCon.Text = "Password Mismatch";
+            this.passCon.Visible = false;
             // 
             // users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(418, 421);
-            this.Controls.Add(this.validEmp_lable);
+            this.ClientSize = new System.Drawing.Size(418, 382);
+            this.Controls.Add(this.passCon);
             this.Controls.Add(this.invalidUser_label);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.userLevel);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.buttonX1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.addUser_button);
+            this.Controls.Add(this.confirmPass);
+            this.Controls.Add(this.pass);
+            this.Controls.Add(this.userName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.validUser_lable);
             this.Controls.Add(this.validPassword_lable);
             this.Controls.Add(this.invalidPassword_lable);
-            this.Controls.Add(this.invalidEmp_lable);
             this.Name = "users";
             this.Text = "users";
             this.Load += new System.EventHandler(this.users_Load);
@@ -285,21 +258,18 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private DevComponents.DotNetBar.ButtonX buttonX1;
+        private System.Windows.Forms.TextBox userName;
+        private System.Windows.Forms.TextBox pass;
+        private System.Windows.Forms.TextBox confirmPass;
+        private DevComponents.DotNetBar.ButtonX addUser_button;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox userLevel;
         private System.Windows.Forms.Label invalidUser_label;
         private System.Windows.Forms.Label validUser_lable;
         private System.Windows.Forms.Label invalidPassword_lable;
         private System.Windows.Forms.Label validPassword_lable;
-        private System.Windows.Forms.Label validEmp_lable;
-        private System.Windows.Forms.Label invalidEmp_lable;
+        private System.Windows.Forms.Label passCon;
     }
 }

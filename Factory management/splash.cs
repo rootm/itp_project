@@ -19,7 +19,7 @@ namespace Factory_management
             InitializeComponent();
         }
 
-        Main mainfrm = new Main();
+        login mainfrm = new login();
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -60,7 +60,7 @@ namespace Factory_management
             }
             catch (Exception)
             {
-                this.Close();
+                this.Hide();
             
             }
            

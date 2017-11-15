@@ -36,6 +36,10 @@
             this.stock_button = new DevComponents.DotNetBar.ButtonX();
             this.finance_button = new DevComponents.DotNetBar.ButtonX();
             this.user_button = new DevComponents.DotNetBar.ButtonX();
+            this.validEmp_lable = new System.Windows.Forms.Label();
+            this.employeeID = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.invalidEmp_lable = new System.Windows.Forms.Label();
             this.side_menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -195,12 +199,59 @@
             this.user_button.Click += new System.EventHandler(this.user_button_Click);
             this.user_button.MouseEnter += new System.EventHandler(this.side_menu_MouseEnter);
             // 
+            // validEmp_lable
+            // 
+            this.validEmp_lable.AutoSize = true;
+            this.validEmp_lable.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.validEmp_lable.ForeColor = System.Drawing.Color.ForestGreen;
+            this.validEmp_lable.Location = new System.Drawing.Point(575, 307);
+            this.validEmp_lable.Name = "validEmp_lable";
+            this.validEmp_lable.Size = new System.Drawing.Size(99, 17);
+            this.validEmp_lable.TabIndex = 21;
+            this.validEmp_lable.Text = "Valid password";
+            this.validEmp_lable.Visible = false;
+            // 
+            // employeeID
+            // 
+            this.employeeID.Enabled = false;
+            this.employeeID.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employeeID.Location = new System.Drawing.Point(480, 324);
+            this.employeeID.Name = "employeeID";
+            this.employeeID.Size = new System.Drawing.Size(194, 29);
+            this.employeeID.TabIndex = 20;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(325, 327);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(104, 22);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Employee ID";
+            // 
+            // invalidEmp_lable
+            // 
+            this.invalidEmp_lable.AutoSize = true;
+            this.invalidEmp_lable.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.invalidEmp_lable.ForeColor = System.Drawing.Color.Red;
+            this.invalidEmp_lable.Location = new System.Drawing.Point(562, 307);
+            this.invalidEmp_lable.Name = "invalidEmp_lable";
+            this.invalidEmp_lable.Size = new System.Drawing.Size(112, 17);
+            this.invalidEmp_lable.TabIndex = 22;
+            this.invalidEmp_lable.Text = "Invalid Employee";
+            this.invalidEmp_lable.Visible = false;
+            // 
             // SysMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(998, 661);
+            this.Controls.Add(this.validEmp_lable);
+            this.Controls.Add(this.employeeID);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.invalidEmp_lable);
             this.Controls.Add(this.side_menu);
             this.IsMdiContainer = true;
             this.Name = "SysMain";
@@ -209,6 +260,7 @@
             this.Load += new System.EventHandler(this.SysMain_Load);
             this.side_menu.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
         #endregion
@@ -221,6 +273,10 @@
         private DevComponents.DotNetBar.ButtonX supplier_button;
         internal DevComponents.DotNetBar.ButtonX finance_button;
         internal DevComponents.DotNetBar.ButtonX user_button;
+        private System.Windows.Forms.Label validEmp_lable;
+        private System.Windows.Forms.TextBox employeeID;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label invalidEmp_lable;
     }
 }
 

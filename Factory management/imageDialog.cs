@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace Factory_management
 {
-    public partial class add_bill : Form
+    public partial class imageDialog : Form
     {
-        public add_bill()
+        public imageDialog()
         {
             InitializeComponent();
         }
-
-        private void add_bill_Load(object sender, EventArgs e)
-        {
-
-        }
-
-
     }
 }

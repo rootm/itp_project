@@ -48,3 +48,6 @@ C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factor
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\LiveCharts.Wpf.pdb
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\bin\Debug\LiveCharts.Wpf.xml
 C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.finance_home.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.errorMsg.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.imageDialog.resources
+C:\Users\Muvindu\documents\visual studio 2015\Projects\Factory management\Factory management\obj\Debug\Factory_management.successMsg.resources
