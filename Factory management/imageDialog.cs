@@ -16,5 +16,20 @@ namespace Factory_management
         {
             InitializeComponent();
         }
+        public string bill;
+        private void imageDialog_Load(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Image.FromFile(bill);
+            
+        }
+        public void getimage(string billimage)
+        {
+            bill = billimage;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -15,7 +15,7 @@ namespace Factory_management
         public DBAccess()
         {
             server = "localhost";
-            database = "dumindubooks";
+            database = "dumidudb";
             uid = "root";
             password = "";
 

@@ -56,6 +56,8 @@ namespace Factory_management
 
         private bool validate_user(string user, string pass)
         {
+            
+
             if (db.connect()) {
 
                 MySqlCommand cmd = new MySqlCommand();
@@ -66,7 +68,8 @@ namespace Factory_management
                 MySqlDataReader login = cmd.ExecuteReader();
                 if (login.Read())
                 {
-                    level= login.GetInt16("user_level");
+                    User.Instance.setSection(login.GetInt16("section"));
+                    User.Instance.setCurrentUser(user);
                     db.closeconnect();
                     return true;
                 }

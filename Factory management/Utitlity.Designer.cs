@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.buttonX8 = new DevComponents.DotNetBar.ButtonX();
             this.label14 = new System.Windows.Forms.Label();
             this.buttonX7 = new DevComponents.DotNetBar.ButtonX();
@@ -37,6 +38,7 @@
             this.buttonX4 = new DevComponents.DotNetBar.ButtonX();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -49,11 +51,35 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
+            this.vehicle_panel = new System.Windows.Forms.Panel();
+            this.editTransport_panel = new System.Windows.Forms.Panel();
+            this.editTransportButton = new System.Windows.Forms.Button();
+            this.repairRequest_panel = new System.Windows.Forms.Panel();
+            this.repairButton = new System.Windows.Forms.Button();
+            this.deliverySchedule_panel = new System.Windows.Forms.Panel();
+            this.deliveryScheduleButton = new System.Windows.Forms.Button();
+            this.editVehicle_panel = new System.Windows.Forms.Panel();
+            this.editVehiclelButton = new System.Windows.Forms.Button();
+            this.transportSchedule_panel = new System.Windows.Forms.Panel();
+            this.transportButton = new System.Windows.Forms.Button();
+            this.editDelivery_panel = new System.Windows.Forms.Panel();
+            this.editDeliveryButton = new System.Windows.Forms.Button();
+            this.addVehicle_panel = new System.Windows.Forms.Panel();
+            this.addVehicleButton = new System.Windows.Forms.Button();
+            this.travelExpense_panel = new System.Windows.Forms.Panel();
+            this.expenseButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.vehicle_panel.SuspendLayout();
+            this.editTransport_panel.SuspendLayout();
+            this.repairRequest_panel.SuspendLayout();
+            this.deliverySchedule_panel.SuspendLayout();
+            this.editVehicle_panel.SuspendLayout();
+            this.transportSchedule_panel.SuspendLayout();
+            this.editDelivery_panel.SuspendLayout();
+            this.addVehicle_panel.SuspendLayout();
+            this.travelExpense_panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -83,9 +109,19 @@
             this.panel1.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(2, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(873, 504);
+            this.panel1.Size = new System.Drawing.Size(873, 142);
             this.panel1.TabIndex = 12;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Factory_management.Properties.Resources.construction;
+            this.pictureBox2.Location = new System.Drawing.Point(17, 10);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(81, 73);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 29;
+            this.pictureBox2.TabStop = false;
             // 
             // buttonX8
             // 
@@ -179,6 +215,21 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(213, 29);
             this.textBox6.TabIndex = 1;
+            // 
+            // buttonX2
+            // 
+            this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX2.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX2.Image = global::Factory_management.Properties.Resources.bill;
+            this.buttonX2.ImageFixedSize = new System.Drawing.Size(35, 35);
+            this.buttonX2.Location = new System.Drawing.Point(157, 447);
+            this.buttonX2.Name = "buttonX2";
+            this.buttonX2.Size = new System.Drawing.Size(213, 44);
+            this.buttonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX2.TabIndex = 21;
+            this.buttonX2.Text = "Browse";
+            this.buttonX2.Click += new System.EventHandler(this.buttonX2_Click);
             // 
             // textBox3
             // 
@@ -298,36 +349,232 @@
             this.label7.TabIndex = 7;
             this.label7.Text = "Bill Type";
             // 
-            // pictureBox2
+            // vehicle_panel
             // 
-            this.pictureBox2.Image = global::Factory_management.Properties.Resources.construction;
-            this.pictureBox2.Location = new System.Drawing.Point(17, 10);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(81, 73);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 29;
-            this.pictureBox2.TabStop = false;
+            this.vehicle_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.vehicle_panel.Controls.Add(this.editTransport_panel);
+            this.vehicle_panel.Controls.Add(this.repairRequest_panel);
+            this.vehicle_panel.Controls.Add(this.deliverySchedule_panel);
+            this.vehicle_panel.Controls.Add(this.editVehicle_panel);
+            this.vehicle_panel.Controls.Add(this.transportSchedule_panel);
+            this.vehicle_panel.Controls.Add(this.editDelivery_panel);
+            this.vehicle_panel.Controls.Add(this.addVehicle_panel);
+            this.vehicle_panel.Location = new System.Drawing.Point(0, 217);
+            this.vehicle_panel.Name = "vehicle_panel";
+            this.vehicle_panel.Size = new System.Drawing.Size(1242, 79);
+            this.vehicle_panel.TabIndex = 13;
+            this.vehicle_panel.Visible = false;
             // 
-            // buttonX2
+            // editTransport_panel
             // 
-            this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX2.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX2.Image = global::Factory_management.Properties.Resources.bill;
-            this.buttonX2.ImageFixedSize = new System.Drawing.Size(35, 35);
-            this.buttonX2.Location = new System.Drawing.Point(157, 447);
-            this.buttonX2.Name = "buttonX2";
-            this.buttonX2.Size = new System.Drawing.Size(213, 44);
-            this.buttonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX2.TabIndex = 21;
-            this.buttonX2.Text = "Browse";
+            this.editTransport_panel.Controls.Add(this.editTransportButton);
+            this.editTransport_panel.Location = new System.Drawing.Point(761, -1);
+            this.editTransport_panel.Name = "editTransport_panel";
+            this.editTransport_panel.Size = new System.Drawing.Size(133, 79);
+            this.editTransport_panel.TabIndex = 0;
+            // 
+            // editTransportButton
+            // 
+            this.editTransportButton.BackColor = System.Drawing.Color.White;
+            this.editTransportButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.editTransportButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.editTransportButton.FlatAppearance.BorderSize = 0;
+            this.editTransportButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(228)))), ((int)(((byte)(208)))));
+            this.editTransportButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(228)))), ((int)(((byte)(208)))));
+            this.editTransportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editTransportButton.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editTransportButton.Location = new System.Drawing.Point(0, 0);
+            this.editTransportButton.Name = "editTransportButton";
+            this.editTransportButton.Size = new System.Drawing.Size(133, 72);
+            this.editTransportButton.TabIndex = 0;
+            this.editTransportButton.Text = "Edit transport Schedule";
+            this.editTransportButton.UseVisualStyleBackColor = false;
+            // 
+            // repairRequest_panel
+            // 
+            this.repairRequest_panel.Controls.Add(this.repairButton);
+            this.repairRequest_panel.Location = new System.Drawing.Point(894, -1);
+            this.repairRequest_panel.Name = "repairRequest_panel";
+            this.repairRequest_panel.Size = new System.Drawing.Size(133, 79);
+            this.repairRequest_panel.TabIndex = 1;
+            this.repairRequest_panel.Visible = false;
+            // 
+            // repairButton
+            // 
+            this.repairButton.BackColor = System.Drawing.Color.White;
+            this.repairButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.repairButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.repairButton.FlatAppearance.BorderSize = 0;
+            this.repairButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(228)))), ((int)(((byte)(208)))));
+            this.repairButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(228)))), ((int)(((byte)(208)))));
+            this.repairButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.repairButton.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.repairButton.Location = new System.Drawing.Point(0, 0);
+            this.repairButton.Name = "repairButton";
+            this.repairButton.Size = new System.Drawing.Size(133, 72);
+            this.repairButton.TabIndex = 0;
+            this.repairButton.Text = "Repair Requests";
+            this.repairButton.UseVisualStyleBackColor = false;
+            // 
+            // deliverySchedule_panel
+            // 
+            this.deliverySchedule_panel.Controls.Add(this.deliveryScheduleButton);
+            this.deliverySchedule_panel.Location = new System.Drawing.Point(296, -1);
+            this.deliverySchedule_panel.Name = "deliverySchedule_panel";
+            this.deliverySchedule_panel.Size = new System.Drawing.Size(149, 79);
+            this.deliverySchedule_panel.TabIndex = 5;
+            // 
+            // deliveryScheduleButton
+            // 
+            this.deliveryScheduleButton.BackColor = System.Drawing.Color.White;
+            this.deliveryScheduleButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.deliveryScheduleButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.deliveryScheduleButton.FlatAppearance.BorderSize = 0;
+            this.deliveryScheduleButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(228)))), ((int)(((byte)(208)))));
+            this.deliveryScheduleButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(228)))), ((int)(((byte)(208)))));
+            this.deliveryScheduleButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deliveryScheduleButton.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deliveryScheduleButton.Location = new System.Drawing.Point(0, 0);
+            this.deliveryScheduleButton.Name = "deliveryScheduleButton";
+            this.deliveryScheduleButton.Size = new System.Drawing.Size(149, 72);
+            this.deliveryScheduleButton.TabIndex = 0;
+            this.deliveryScheduleButton.Text = "Delivery Schedule";
+            this.deliveryScheduleButton.UseVisualStyleBackColor = false;
+            // 
+            // editVehicle_panel
+            // 
+            this.editVehicle_panel.Controls.Add(this.editVehiclelButton);
+            this.editVehicle_panel.Location = new System.Drawing.Point(133, -1);
+            this.editVehicle_panel.Name = "editVehicle_panel";
+            this.editVehicle_panel.Size = new System.Drawing.Size(163, 79);
+            this.editVehicle_panel.TabIndex = 4;
+            // 
+            // editVehiclelButton
+            // 
+            this.editVehiclelButton.BackColor = System.Drawing.Color.White;
+            this.editVehiclelButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.editVehiclelButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.editVehiclelButton.FlatAppearance.BorderSize = 0;
+            this.editVehiclelButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(228)))), ((int)(((byte)(208)))));
+            this.editVehiclelButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(228)))), ((int)(((byte)(208)))));
+            this.editVehiclelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editVehiclelButton.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editVehiclelButton.Location = new System.Drawing.Point(0, 0);
+            this.editVehiclelButton.Name = "editVehiclelButton";
+            this.editVehiclelButton.Size = new System.Drawing.Size(163, 72);
+            this.editVehiclelButton.TabIndex = 0;
+            this.editVehiclelButton.Text = "Edit Vehicle";
+            this.editVehiclelButton.UseVisualStyleBackColor = false;
+            // 
+            // transportSchedule_panel
+            // 
+            this.transportSchedule_panel.Controls.Add(this.transportButton);
+            this.transportSchedule_panel.Location = new System.Drawing.Point(612, -1);
+            this.transportSchedule_panel.Name = "transportSchedule_panel";
+            this.transportSchedule_panel.Size = new System.Drawing.Size(149, 79);
+            this.transportSchedule_panel.TabIndex = 3;
+            // 
+            // transportButton
+            // 
+            this.transportButton.BackColor = System.Drawing.Color.White;
+            this.transportButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.transportButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.transportButton.FlatAppearance.BorderSize = 0;
+            this.transportButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(228)))), ((int)(((byte)(208)))));
+            this.transportButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(228)))), ((int)(((byte)(208)))));
+            this.transportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.transportButton.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transportButton.Location = new System.Drawing.Point(0, 0);
+            this.transportButton.Name = "transportButton";
+            this.transportButton.Size = new System.Drawing.Size(149, 72);
+            this.transportButton.TabIndex = 0;
+            this.transportButton.Text = "Transport Schedule";
+            this.transportButton.UseVisualStyleBackColor = false;
+            // 
+            // editDelivery_panel
+            // 
+            this.editDelivery_panel.Controls.Add(this.editDeliveryButton);
+            this.editDelivery_panel.Location = new System.Drawing.Point(445, -1);
+            this.editDelivery_panel.Name = "editDelivery_panel";
+            this.editDelivery_panel.Size = new System.Drawing.Size(167, 79);
+            this.editDelivery_panel.TabIndex = 2;
+            // 
+            // editDeliveryButton
+            // 
+            this.editDeliveryButton.BackColor = System.Drawing.Color.White;
+            this.editDeliveryButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.editDeliveryButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.editDeliveryButton.FlatAppearance.BorderSize = 0;
+            this.editDeliveryButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(228)))), ((int)(((byte)(208)))));
+            this.editDeliveryButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(228)))), ((int)(((byte)(208)))));
+            this.editDeliveryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editDeliveryButton.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editDeliveryButton.Location = new System.Drawing.Point(0, 0);
+            this.editDeliveryButton.Name = "editDeliveryButton";
+            this.editDeliveryButton.Size = new System.Drawing.Size(167, 72);
+            this.editDeliveryButton.TabIndex = 0;
+            this.editDeliveryButton.Text = "Edit delivery Schedule";
+            this.editDeliveryButton.UseVisualStyleBackColor = false;
+            // 
+            // addVehicle_panel
+            // 
+            this.addVehicle_panel.Controls.Add(this.addVehicleButton);
+            this.addVehicle_panel.Location = new System.Drawing.Point(0, -1);
+            this.addVehicle_panel.Name = "addVehicle_panel";
+            this.addVehicle_panel.Size = new System.Drawing.Size(133, 79);
+            this.addVehicle_panel.TabIndex = 1;
+            // 
+            // addVehicleButton
+            // 
+            this.addVehicleButton.BackColor = System.Drawing.Color.White;
+            this.addVehicleButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addVehicleButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.addVehicleButton.FlatAppearance.BorderSize = 0;
+            this.addVehicleButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(228)))), ((int)(((byte)(208)))));
+            this.addVehicleButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(228)))), ((int)(((byte)(208)))));
+            this.addVehicleButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addVehicleButton.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addVehicleButton.Location = new System.Drawing.Point(0, 0);
+            this.addVehicleButton.Name = "addVehicleButton";
+            this.addVehicleButton.Size = new System.Drawing.Size(133, 72);
+            this.addVehicleButton.TabIndex = 0;
+            this.addVehicleButton.Text = "Add Vehicle";
+            this.addVehicleButton.UseVisualStyleBackColor = false;
+            // 
+            // travelExpense_panel
+            // 
+            this.travelExpense_panel.Controls.Add(this.expenseButton);
+            this.travelExpense_panel.Location = new System.Drawing.Point(1027, 217);
+            this.travelExpense_panel.Name = "travelExpense_panel";
+            this.travelExpense_panel.Size = new System.Drawing.Size(133, 79);
+            this.travelExpense_panel.TabIndex = 6;
+            this.travelExpense_panel.Visible = false;
+            // 
+            // expenseButton
+            // 
+            this.expenseButton.BackColor = System.Drawing.Color.White;
+            this.expenseButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.expenseButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.expenseButton.FlatAppearance.BorderSize = 0;
+            this.expenseButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(228)))), ((int)(((byte)(208)))));
+            this.expenseButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(228)))), ((int)(((byte)(208)))));
+            this.expenseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.expenseButton.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.expenseButton.Location = new System.Drawing.Point(0, 0);
+            this.expenseButton.Name = "expenseButton";
+            this.expenseButton.Size = new System.Drawing.Size(133, 72);
+            this.expenseButton.TabIndex = 0;
+            this.expenseButton.Text = "Travel Expenses";
+            this.expenseButton.UseVisualStyleBackColor = false;
             // 
             // Utitlity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(939, 512);
+            this.ClientSize = new System.Drawing.Size(1303, 512);
+            this.Controls.Add(this.travelExpense_panel);
+            this.Controls.Add(this.vehicle_panel);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Utitlity";
@@ -335,8 +582,17 @@
             this.Text = "Utitlity";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.vehicle_panel.ResumeLayout(false);
+            this.editTransport_panel.ResumeLayout(false);
+            this.repairRequest_panel.ResumeLayout(false);
+            this.deliverySchedule_panel.ResumeLayout(false);
+            this.editVehicle_panel.ResumeLayout(false);
+            this.transportSchedule_panel.ResumeLayout(false);
+            this.editDelivery_panel.ResumeLayout(false);
+            this.addVehicle_panel.ResumeLayout(false);
+            this.travelExpense_panel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -365,5 +621,22 @@
         private DevComponents.DotNetBar.ButtonX buttonX8;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel vehicle_panel;
+        private System.Windows.Forms.Panel editTransport_panel;
+        private System.Windows.Forms.Button editTransportButton;
+        private System.Windows.Forms.Panel repairRequest_panel;
+        private System.Windows.Forms.Button repairButton;
+        private System.Windows.Forms.Panel deliverySchedule_panel;
+        private System.Windows.Forms.Button deliveryScheduleButton;
+        private System.Windows.Forms.Panel editVehicle_panel;
+        private System.Windows.Forms.Button editVehiclelButton;
+        private System.Windows.Forms.Panel transportSchedule_panel;
+        private System.Windows.Forms.Button transportButton;
+        private System.Windows.Forms.Panel editDelivery_panel;
+        private System.Windows.Forms.Button editDeliveryButton;
+        private System.Windows.Forms.Panel addVehicle_panel;
+        private System.Windows.Forms.Button addVehicleButton;
+        private System.Windows.Forms.Panel travelExpense_panel;
+        private System.Windows.Forms.Button expenseButton;
     }
 }

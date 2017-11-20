@@ -33,10 +33,9 @@
             this.vehicleExpenses_grid = new System.Windows.Forms.DataGridView();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.approve_button = new DevComponents.DotNetBar.ButtonX();
@@ -48,13 +47,13 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.status = new System.Windows.Forms.ComboBox();
             this.searchButton = new System.Windows.Forms.Button();
             this.approveButton = new System.Windows.Forms.Button();
             this.declineButton = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
+            this.numDelivery = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.numTransport = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -86,10 +85,9 @@
             this.vehicleExpenses_grid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column10,
             this.Column1,
-            this.Column2,
             this.Column3,
-            this.Column4,
-            this.Column5});
+            this.Column2,
+            this.Column4});
             this.vehicleExpenses_grid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.vehicleExpenses_grid.Location = new System.Drawing.Point(473, 111);
             this.vehicleExpenses_grid.Name = "vehicleExpenses_grid";
@@ -118,12 +116,6 @@
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Destination";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
             // Column3
             // 
             this.Column3.HeaderText = "Type of Travel";
@@ -131,17 +123,18 @@
             this.Column3.ReadOnly = true;
             this.Column3.Width = 150;
             // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Destination";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 200;
+            // 
             // Column4
             // 
             this.Column4.HeaderText = "Date";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Total Amount";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
             // 
             // label3
             // 
@@ -285,17 +278,18 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Approve Status :";
             // 
-            // comboBox1
+            // status
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Pending Transactions",
-            "Approved Transactions"});
-            this.comboBox1.Location = new System.Drawing.Point(596, 67);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(246, 28);
-            this.comboBox1.TabIndex = 14;
+            this.status.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.status.FormattingEnabled = true;
+            this.status.Items.AddRange(new object[] {
+            "Pending",
+            "Approved",
+            "Declined"});
+            this.status.Location = new System.Drawing.Point(596, 67);
+            this.status.Name = "status";
+            this.status.Size = new System.Drawing.Size(246, 28);
+            this.status.TabIndex = 14;
             // 
             // searchButton
             // 
@@ -310,10 +304,12 @@
             this.searchButton.TabIndex = 15;
             this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = false;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // approveButton
             // 
             this.approveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(194)))), ((int)(((byte)(110)))));
+            this.approveButton.Enabled = false;
             this.approveButton.FlatAppearance.BorderSize = 0;
             this.approveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.approveButton.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -324,10 +320,12 @@
             this.approveButton.TabIndex = 16;
             this.approveButton.Text = "Approve Transaction";
             this.approveButton.UseVisualStyleBackColor = false;
+            this.approveButton.Click += new System.EventHandler(this.approveButton_Click);
             // 
             // declineButton
             // 
             this.declineButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
+            this.declineButton.Enabled = false;
             this.declineButton.FlatAppearance.BorderSize = 0;
             this.declineButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.declineButton.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -338,17 +336,18 @@
             this.declineButton.TabIndex = 17;
             this.declineButton.Text = "Decline Transaction";
             this.declineButton.UseVisualStyleBackColor = false;
+            this.declineButton.Click += new System.EventHandler(this.declineButton_Click);
             // 
-            // label14
+            // numDelivery
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(76)))), ((int)(((byte)(63)))));
-            this.label14.Location = new System.Drawing.Point(36, 82);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(107, 22);
-            this.label14.TabIndex = 30;
-            this.label14.Text = "Deliery         :";
+            this.numDelivery.AutoSize = true;
+            this.numDelivery.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numDelivery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(76)))), ((int)(((byte)(63)))));
+            this.numDelivery.Location = new System.Drawing.Point(36, 82);
+            this.numDelivery.Name = "numDelivery";
+            this.numDelivery.Size = new System.Drawing.Size(107, 22);
+            this.numDelivery.TabIndex = 30;
+            this.numDelivery.Text = "Deliery         :";
             // 
             // label18
             // 
@@ -361,16 +360,16 @@
             this.label18.TabIndex = 29;
             this.label18.Text = "Number Of Total Trips";
             // 
-            // label2
+            // numTransport
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(76)))), ((int)(((byte)(63)))));
-            this.label2.Location = new System.Drawing.Point(36, 51);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 22);
-            this.label2.TabIndex = 31;
-            this.label2.Text = "Transport   :";
+            this.numTransport.AutoSize = true;
+            this.numTransport.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numTransport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(76)))), ((int)(((byte)(63)))));
+            this.numTransport.Location = new System.Drawing.Point(36, 51);
+            this.numTransport.Name = "numTransport";
+            this.numTransport.Size = new System.Drawing.Size(106, 22);
+            this.numTransport.TabIndex = 31;
+            this.numTransport.Text = "Transport   :";
             // 
             // label5
             // 
@@ -387,8 +386,8 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
             this.panel4.Controls.Add(this.label18);
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Controls.Add(this.label14);
+            this.panel4.Controls.Add(this.numTransport);
+            this.panel4.Controls.Add(this.numDelivery);
             this.panel4.Location = new System.Drawing.Point(12, 111);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(441, 135);
@@ -422,7 +421,7 @@
             this.Controls.Add(this.declineButton);
             this.Controls.Add(this.approveButton);
             this.Controls.Add(this.searchButton);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.status);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listExpense_grid);
             this.Controls.Add(this.decline_button);
@@ -456,28 +455,27 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private DevComponents.DotNetBar.ButtonX approve_button;
         private DevComponents.DotNetBar.ButtonX decline_button;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridView listExpense_grid;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox status;
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.Button approveButton;
         private System.Windows.Forms.Button declineButton;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label numDelivery;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label numTransport;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel1;
         private LiveCharts.WinForms.PieChart pieChart1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }
 }

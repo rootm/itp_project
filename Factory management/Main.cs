@@ -118,7 +118,7 @@ namespace Factory_management
         {
             setWhite_FinancialPanels();
             vehiclePanel.BackColor = Color.FromArgb(255, 1, 194, 110);
-            Vehicle_expenses lg = new Vehicle_expenses();
+             Vehicle_expenses lg = new Vehicle_expenses();
             lg.TopLevel = false;
             this.panel4.Controls.Clear();
             this.panel4.Controls.Add(lg);

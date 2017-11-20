@@ -192,7 +192,7 @@
             this.agentButton.Name = "agentButton";
             this.agentButton.Size = new System.Drawing.Size(149, 72);
             this.agentButton.TabIndex = 0;
-            this.agentButton.Text = "Agent payments";
+            this.agentButton.Text = "Agent Payments";
             this.agentButton.UseVisualStyleBackColor = false;
             this.agentButton.Click += new System.EventHandler(this.agentButton_Click);
             // 
@@ -218,7 +218,7 @@
             this.meterialButton.Name = "meterialButton";
             this.meterialButton.Size = new System.Drawing.Size(163, 72);
             this.meterialButton.TabIndex = 0;
-            this.meterialButton.Text = "Meterial payments";
+            this.meterialButton.Text = "Meterial Payments";
             this.meterialButton.UseVisualStyleBackColor = false;
             this.meterialButton.Click += new System.EventHandler(this.meterialButton_Click);
             // 
@@ -440,7 +440,7 @@
             this.users_menu.Name = "users_menu";
             this.users_menu.Size = new System.Drawing.Size(132, 71);
             this.users_menu.TabIndex = 0;
-            this.users_menu.Text = "Users";
+            this.users_menu.Text = "Orders";
             this.users_menu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.users_menu.UseVisualStyleBackColor = true;
             this.users_menu.Click += new System.EventHandler(this.users_menu_Click);
@@ -478,7 +478,6 @@
             this.IsMdiContainer = true;
             this.Name = "Main";
             this.Text = "Main";
-            this.TopMost = true;
             this.Load += new System.EventHandler(this.Main_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

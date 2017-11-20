@@ -34,16 +34,16 @@
             this.userName = new System.Windows.Forms.TextBox();
             this.pass = new System.Windows.Forms.TextBox();
             this.confirmPass = new System.Windows.Forms.TextBox();
-            this.addUser_button = new DevComponents.DotNetBar.ButtonX();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.userLevel = new System.Windows.Forms.ComboBox();
+            this.userSection = new System.Windows.Forms.ComboBox();
             this.invalidUser_label = new System.Windows.Forms.Label();
             this.validUser_lable = new System.Windows.Forms.Label();
             this.invalidPassword_lable = new System.Windows.Forms.Label();
             this.validPassword_lable = new System.Windows.Forms.Label();
             this.passCon = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.addUser_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,22 +106,6 @@
             this.confirmPass.TabIndex = 6;
             this.confirmPass.TextChanged += new System.EventHandler(this.confirmPass_TextChanged);
             // 
-            // addUser_button
-            // 
-            this.addUser_button.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.addUser_button.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.addUser_button.Enabled = false;
-            this.addUser_button.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addUser_button.Location = new System.Drawing.Point(244, 301);
-            this.addUser_button.Name = "addUser_button";
-            this.addUser_button.Size = new System.Drawing.Size(127, 47);
-            this.addUser_button.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.addUser_button.Symbol = "";
-            this.addUser_button.SymbolColor = System.Drawing.Color.Black;
-            this.addUser_button.TabIndex = 8;
-            this.addUser_button.Text = "Add User";
-            this.addUser_button.Click += new System.EventHandler(this.addUser_button_Click);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -142,26 +126,28 @@
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
-            // label6
+            // userSection
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(22, 252);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 22);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "User Level";
-            // 
-            // userLevel
-            // 
-            this.userLevel.Enabled = false;
-            this.userLevel.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userLevel.FormattingEnabled = true;
-            this.userLevel.Location = new System.Drawing.Point(177, 248);
-            this.userLevel.Name = "userLevel";
-            this.userLevel.Size = new System.Drawing.Size(194, 30);
-            this.userLevel.TabIndex = 12;
-            this.userLevel.SelectedIndexChanged += new System.EventHandler(this.userLevel_SelectedIndexChanged);
+            this.userSection.Enabled = false;
+            this.userSection.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userSection.FormattingEnabled = true;
+            this.userSection.Items.AddRange(new object[] {
+            "Admin",
+            "Users Management",
+            "Financial Management",
+            "Employee Management",
+            "Supplier Management",
+            "Agent Management",
+            "Order Management",
+            "Vehicle Management",
+            "Maintainance Mangement",
+            "Inventory Management",
+            ""});
+            this.userSection.Location = new System.Drawing.Point(177, 249);
+            this.userSection.Name = "userSection";
+            this.userSection.Size = new System.Drawing.Size(194, 30);
+            this.userSection.TabIndex = 12;
+            this.userSection.SelectedIndexChanged += new System.EventHandler(this.userLevel_SelectedIndexChanged);
             // 
             // invalidUser_label
             // 
@@ -223,18 +209,44 @@
             this.passCon.Text = "Password Mismatch";
             this.passCon.Visible = false;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(22, 252);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(66, 22);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "Section";
+            // 
+            // addUser_button
+            // 
+            this.addUser_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.addUser_button.FlatAppearance.BorderSize = 0;
+            this.addUser_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addUser_button.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addUser_button.ForeColor = System.Drawing.Color.White;
+            this.addUser_button.Location = new System.Drawing.Point(177, 304);
+            this.addUser_button.Name = "addUser_button";
+            this.addUser_button.Size = new System.Drawing.Size(194, 38);
+            this.addUser_button.TabIndex = 48;
+            this.addUser_button.Text = "Add User";
+            this.addUser_button.UseVisualStyleBackColor = false;
+            this.addUser_button.Click += new System.EventHandler(this.addUser_button_Click);
+            // 
             // users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(418, 382);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(432, 379);
+            this.Controls.Add(this.addUser_button);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.passCon);
             this.Controls.Add(this.invalidUser_label);
-            this.Controls.Add(this.userLevel);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.userSection);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.addUser_button);
             this.Controls.Add(this.confirmPass);
             this.Controls.Add(this.pass);
             this.Controls.Add(this.userName);
@@ -261,15 +273,15 @@
         private System.Windows.Forms.TextBox userName;
         private System.Windows.Forms.TextBox pass;
         private System.Windows.Forms.TextBox confirmPass;
-        private DevComponents.DotNetBar.ButtonX addUser_button;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox userLevel;
+        private System.Windows.Forms.ComboBox userSection;
         private System.Windows.Forms.Label invalidUser_label;
         private System.Windows.Forms.Label validUser_lable;
         private System.Windows.Forms.Label invalidPassword_lable;
         private System.Windows.Forms.Label validPassword_lable;
         private System.Windows.Forms.Label passCon;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button addUser_button;
     }
 }

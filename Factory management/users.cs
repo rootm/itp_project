@@ -74,12 +74,12 @@ namespace Factory_management
             if (pass.Text == confirmPass.Text)
             {
                 passCon.Visible = false;
-                userLevel.Enabled = true;
+                userSection.Enabled = true;
             }
             else
             {
                 passCon.Show();
-                userLevel.Enabled = false;
+                userSection.Enabled = false;
             }
         }
 
@@ -92,7 +92,7 @@ namespace Factory_management
 
                 pass.Enabled = false;
                 confirmPass.Enabled = false;
-                userLevel.Enabled = false;
+                userSection.Enabled = false;
 
             }
             else
@@ -102,7 +102,7 @@ namespace Factory_management
 
                 pass.Enabled = true;
                 confirmPass.Enabled = true;
-                userLevel.Enabled = true;
+                userSection.Enabled = true;
             }
         }
 
@@ -113,7 +113,7 @@ namespace Factory_management
                 invalidPassword_lable.Show();
                 validPassword_lable.Hide();
                 confirmPass.Enabled = false;
-                userLevel.Enabled = false;
+                userSection.Enabled = false;
 
             }
             else
@@ -121,13 +121,13 @@ namespace Factory_management
                 invalidPassword_lable.Hide();
                 validPassword_lable.Show();
                 confirmPass.Enabled = true;
-                userLevel.Enabled = true;
+                userSection.Enabled = true;
             }
         }
 
         private void userLevel_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (userLevel.SelectedIndex > -1)
+            if (userSection.SelectedIndex > -1)
             {
                 addUser_button.Enabled = true;
             }
@@ -137,16 +137,16 @@ namespace Factory_management
             }
         }
 
-        bool addUser(string user,string pass,string level)
+        bool addUser(string user,string pass,int section)
         {
             if (db.connect())
             {
                 MySqlCommand cmd = new MySqlCommand();
 
-                cmd.CommandText = "Insert into user_details SET VALUES (@user,@pass,@level);";
+                cmd.CommandText = "Insert into user_details(user_name,user_pass,section) VALUES (@user,@pass,@section);";
                 cmd.Parameters.AddWithValue("@user", user);
                 cmd.Parameters.AddWithValue("@pass", pass);
-                cmd.Parameters.AddWithValue("@level", level);
+                cmd.Parameters.AddWithValue("@section", section);
                 cmd.Connection = db.connection;
 
 
@@ -167,24 +167,23 @@ namespace Factory_management
 
         }
 
-
         private void addUser_button_Click(object sender, EventArgs e)
         {
 
-
-            if (addUser(userName.Text, pass.Text, userLevel.SelectedText))
+            if (addUser(userName.Text, pass.Text, userSection.SelectedIndex))
             {
                 MessageBox.Show("User Add Successful");
                 pass.Enabled = false;
                 confirmPass.Enabled = false;
-                userLevel.Enabled = false;
+                userSection.Enabled = false;
                 addUser_button.Enabled = false;
+                this.Controls.OfType<TextBox>().ToList().ForEach(textBox => textBox.Clear());
             }
-            else {
+            else
+            {
                 MessageBox.Show("User Add failed");
-                
+
             }
         }
-
     }
 }

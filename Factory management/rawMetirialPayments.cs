@@ -26,13 +26,13 @@ namespace Factory_management
             {
                 MySqlCommand cmd = new MySqlCommand();
                 
-                    cmd.CommandText = "SELECT Mname FROM material";
+                    cmd.CommandText = "SELECT materialName FROM material_details";
                     cmd.Connection = db.connection;
                     MySqlDataReader login = cmd.ExecuteReader();
                     while (login.Read())
                     {
 
-                    materialType.Items.Add(login.GetString("Mname"));
+                    materialType.Items.Add(login.GetString("materialName"));
 
                     }
 
@@ -57,7 +57,7 @@ namespace Factory_management
                  MySqlCommand cmd = new MySqlCommand();
                 if (materialType > 0)
                 {
-                    cmd.CommandText = "SELECT m.Mname,mo.MorderId,mo.quantity,mo.Odate,s.Sname,s.supid,s.Uprice FROM morder mo,material m,supplier s where mo.status='pending' AND mo.mid=@mid AND mo.Odate=@orderDate  AND s.supid=mo.supid AND m.mid=mo.mid;";
+                    cmd.CommandText = "SELECT m.materialName,mo.orderId,mo.quantity,mo.orderDate,mo.cost,s.supplierId,s.name,sm.unitPrice FROM material_orders mo,material_details m,supplier_details s,supplier_material sm where mo.status='pending' AND s.supplierId=mo.supplierId AND m.materialId=mo.materialId AND sm.materialId=mo.materialId AND sm.supplierId=mo.supplierId AND mo.orderDate=@orderDate AND mo.materialId=@mid";
                     cmd.Parameters.AddWithValue("@orderDate", dt);
                     cmd.Parameters.AddWithValue("@mid", materialType);
                     cmd.Connection = db.connection;
@@ -65,14 +65,14 @@ namespace Factory_management
                     while (login.Read())
                     {
 
-                        meterialOrder_grid.Rows.Add(login.GetString("MorderId"), login.GetString("Mname"), login.GetString("quantity"), login.GetString("Odate"), login.GetString("supid"), login.GetString("Sname"), login.GetString("Uprice"), login.GetString("Uprice"));
+                        meterialOrder_grid.Rows.Add(login.GetString("orderId"), login.GetString("materialName"), login.GetString("quantity"), login.GetString("orderDate"), login.GetString("supplierId"), login.GetString("name"), login.GetString("unitPrice"), login.GetString("cost"));
 
                     }
 
                 }
                 else {
-                    cmd.CommandText = "SELECT m.Mname,mo.MorderId,mo.quantity,mo.Odate,s.supid,s.Sname,s.Uprice FROM morder mo,material m,supplier s where mo.status='pending' AND mo.Odate=@orderDate  AND s.supid=mo.supid AND m.mid=mo.mid;";
-               //     cmd.Parameters.AddWithValue("@materialID", materialType);
+                    cmd.CommandText = "SELECT m.materialName,mo.orderId,mo.quantity,mo.orderDate,mo.cost,s.supplierId,s.name,sm.unitPrice FROM material_orders mo,material_details m,supplier_details s,supplier_material sm where mo.status='pending' AND s.supplierId=mo.supplierId AND m.materialId=mo.materialId AND sm.materialId=mo.materialId AND sm.supplierId=mo.supplierId AND mo.orderDate=@orderDate";
+                    //     cmd.Parameters.AddWithValue("@materialID", materialType);
                     cmd.Parameters.AddWithValue("@orderDate", dt);
                     
                     cmd.Connection = db.connection;
@@ -80,7 +80,7 @@ namespace Factory_management
                     while (login.Read())
                     {
 
-                        meterialOrder_grid.Rows.Add(login.GetString("MorderId"), login.GetString("Mname"), login.GetString("quantity"), login.GetString("Odate"), login.GetString("supid"), login.GetString("Sname"), login.GetString("Uprice"), login.GetString("Uprice"));
+                        meterialOrder_grid.Rows.Add(login.GetString("orderId"), login.GetString("materialName"), login.GetString("quantity"), login.GetString("orderDate"), login.GetString("supplierId"), login.GetString("name"), login.GetString("unitPrice"), login.GetString("cost"));
 
                     }
 
@@ -103,14 +103,14 @@ namespace Factory_management
             {
                 MySqlCommand cmd = new MySqlCommand();
 
-                cmd.CommandText = "SELECT m.Mname,mo.MorderId,mo.quantity,mo.Odate,s.supid,s.Sname,s.Uprice FROM morder mo,material m,supplier s where mo.status='pending' AND s.supid=mo.supid AND m.mid=mo.mid;";
+                cmd.CommandText = "SELECT m.materialName,mo.orderId,mo.quantity,mo.orderDate,s.supplierId,s.name,sm.unitPrice,mo.cost FROM material_orders mo,material_details m,supplier_details s,supplier_material sm where mo.status='pending' AND s.supplierId=mo.supplierId AND m.materialId=mo.materialId AND sm.materialId=mo.materialId AND sm.supplierId=mo.supplierId;";
 
                 cmd.Connection = db.connection;
                     MySqlDataReader login = cmd.ExecuteReader();
                     while (login.Read())
                     {
 
-                        meterialOrder_grid.Rows.Add(login.GetString("MorderId"), login.GetString("Mname"), login.GetString("quantity"), login.GetString("Odate"), login.GetString("supid"), login.GetString("Sname"), login.GetString("Uprice"), login.GetString("Uprice"));
+                        meterialOrder_grid.Rows.Add(login.GetString("orderId"), login.GetString("materialName"), login.GetString("quantity"), login.GetString("orderDate"), login.GetString("supplierId"), login.GetString("name"), login.GetString("unitPrice"), login.GetString("cost"));
 
                     }
 
@@ -133,7 +133,7 @@ namespace Factory_management
             {
                 MySqlCommand cmd = new MySqlCommand();
                
-                    cmd.CommandText = "SELECT * FROM supplier  where supid=@supplierID";
+                    cmd.CommandText = "SELECT * FROM supplier_details  where supplierId=@supplierID";
                  //   cmd.Parameters.AddWithValue("@orderDate", dt);
                     cmd.Parameters.AddWithValue("@supplierID", id);
                     cmd.Connection = db.connection;
@@ -142,11 +142,11 @@ namespace Factory_management
                     {
 
                     //meterialOrder_grid.Rows.Add(login.GetString("MorderId"), login.GetString("Mname"), login.GetString("quantity"), login.GetString("Odate"), login.GetString("Sname"), login.GetString("Uprice"), login.GetString("Uprice"));
-                    supplierID_label.Text = "Supplier ID             : " + reader.GetString("supid");
-                    supplierName_label.Text= "Supplier Name      : " + reader.GetString("Sname");
-                    supplierAccount_label.Text= "Supplier Account : " + reader.GetString("Sacc1");
-                    unitPrice_label.Text = "Unit Price (LKR)     : " + reader.GetString("Uprice");
-                    total_lable.Text= "Grand Total           : " + reader.GetInt32("Uprice")*qnt;
+                    supplierID_label.Text = "Supplier ID             : " + reader.GetString("supplierId");
+                    supplierName_label.Text= "Supplier Name      : " + reader.GetString("name");
+                    supplierAccount_label.Text= "Supplier Account : " + reader.GetString("account1");
+                    unitPrice_label.Text = "Unit Price (LKR)     : " + meterialOrder_grid.Rows[meterialOrder_grid.SelectedRows[0].Index].Cells[6].Value.ToString();
+                    total_lable.Text= "Grand Total           : " + meterialOrder_grid.Rows[meterialOrder_grid.SelectedRows[0].Index].Cells[7].Value.ToString();
 
                 }
 
@@ -169,12 +169,19 @@ namespace Factory_management
             materialType.SelectedIndex = 0;
         }
 
-        bool approveOrder(string orderID) {
+        bool approveOrder(string orderID,int status) {
             if (db.connect())
             {
                 MySqlCommand cmd = new MySqlCommand();
 
-                cmd.CommandText = "UPDATE morder SET status='approved' where MorderId=@id";
+                if (status == 0)
+                {
+                    cmd.CommandText = "UPDATE material_orders SET status='approved' where orderId=@id";
+                }
+                else if(status==1)
+                {
+                    cmd.CommandText = "UPDATE material_orders SET status='declined' where orderId=@id";
+                }
                 cmd.Parameters.AddWithValue("@id", orderID);
                 cmd.Connection = db.connection;
                 
@@ -199,33 +206,12 @@ namespace Factory_management
 
 
 
-        private void search_Click(object sender, EventArgs e)
-        {
-            string date = orderDate.Value.ToString("yyyy-MM-dd");
-         
-            searchSupplier(date, materialType.SelectedIndex);
-        }
+   
 
-        private void meterialOrder_grid_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-           
+ 
 
-        }
 
-        private void aproveButton_Click(object sender, EventArgs e)
-        {
-
-            if (approveOrder(meterialOrder_grid.Rows[meterialOrder_grid.SelectedRows[0].Index].Cells[0].Value.ToString())) {
-                MessageBox.Show("Approve Successful");
-                meterialOrder_grid.Rows.RemoveAt(meterialOrder_grid.SelectedRows[0].Index);
-                meterialOrder_grid.Refresh();
-            }
-        }
-
-        private void viewAll_Click(object sender, EventArgs e)
-        {
-            allSupplier();
-        }
+     
 
         private void meterialOrder_grid_SelectionChanged(object sender, EventArgs e)
         {
@@ -233,16 +219,49 @@ namespace Factory_management
             {
                 getSupplierDetails(meterialOrder_grid.Rows[meterialOrder_grid.SelectedRows[0].Index].Cells[4].Value.ToString(), Int32.Parse(meterialOrder_grid.Rows[meterialOrder_grid.SelectedRows[0].Index].Cells[2].Value.ToString()));
 
-                approveButton.Enabled = true;
-                //confirm_button.Enabled = false;
+                approve.Enabled = true;
+                decline.Enabled = true;
             }
             else {
-                approveButton.Enabled = false;
+                approve.Enabled = false;
+                decline.Enabled = false;
                 supplierID_label.Text = "Supplier ID             : " ;
                 supplierName_label.Text = "Supplier Name      : " ;
                 supplierAccount_label.Text = "Supplier Account : " ;
                 unitPrice_label.Text = "Unit Price (LKR)     : ";
                 total_lable.Text = "Grand Total           : ";
+            }
+        }
+
+        private void search_Click(object sender, EventArgs e)
+        {
+            string date = orderDate.Value.ToString("yyyy-MM-dd");
+
+            searchSupplier(date, materialType.SelectedIndex);
+        }
+
+        private void viewAll_Click(object sender, EventArgs e)
+        {
+            allSupplier();
+        }
+
+        private void approve_Click(object sender, EventArgs e)
+        {
+            if (approveOrder(meterialOrder_grid.Rows[meterialOrder_grid.SelectedRows[0].Index].Cells[0].Value.ToString(),0))
+            {
+                MessageBox.Show("Approve Successful");
+                meterialOrder_grid.Rows.RemoveAt(meterialOrder_grid.SelectedRows[0].Index);
+                meterialOrder_grid.Refresh();
+            }
+        }
+
+        private void decline_Click(object sender, EventArgs e)
+        {
+            if (approveOrder(meterialOrder_grid.Rows[meterialOrder_grid.SelectedRows[0].Index].Cells[0].Value.ToString(), 1))
+            {
+                MessageBox.Show("Decline Successful");
+                meterialOrder_grid.Rows.RemoveAt(meterialOrder_grid.SelectedRows[0].Index);
+                meterialOrder_grid.Refresh();
             }
         }
     }
