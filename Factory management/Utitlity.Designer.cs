@@ -352,6 +352,7 @@
             // vehicle_panel
             // 
             this.vehicle_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.vehicle_panel.Controls.Add(this.travelExpense_panel);
             this.vehicle_panel.Controls.Add(this.editTransport_panel);
             this.vehicle_panel.Controls.Add(this.repairRequest_panel);
             this.vehicle_panel.Controls.Add(this.deliverySchedule_panel);
@@ -544,7 +545,7 @@
             // travelExpense_panel
             // 
             this.travelExpense_panel.Controls.Add(this.expenseButton);
-            this.travelExpense_panel.Location = new System.Drawing.Point(1027, 217);
+            this.travelExpense_panel.Location = new System.Drawing.Point(1027, -1);
             this.travelExpense_panel.Name = "travelExpense_panel";
             this.travelExpense_panel.Size = new System.Drawing.Size(133, 79);
             this.travelExpense_panel.TabIndex = 6;
@@ -573,7 +574,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1303, 512);
-            this.Controls.Add(this.travelExpense_panel);
             this.Controls.Add(this.vehicle_panel);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;

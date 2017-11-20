@@ -65,19 +65,108 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="add agent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add agent.designer.cs">
+      <DependentUpon>add agent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addEdit_vehicles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addEdit_vehicles.designer.cs">
+      <DependentUpon>addEdit_vehicles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addOrdersClass.cs" />
     <Compile Include="add_bill.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="add_bill.Designer.cs">
       <DependentUpon>add_bill.cs</DependentUpon>
     </Compile>
+    <Compile Include="Agent orders details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agent orders details.designer.cs">
+      <DependentUpon>Agent orders details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="agentClass.cs" />
+    <Compile Include="attendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="attendance.designer.cs">
+      <DependentUpon>attendance.cs</DependentUpon>
+    </Compile>
     <Compile Include="Bill.cs" />
+    <Compile Include="CheckRepair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckRepair.designer.cs">
+      <DependentUpon>CheckRepair.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBAccess.cs" />
+    <Compile Include="deliverySchedule.cs" />
+    <Compile Include="DeliveryShedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeliveryShedule.designer.cs">
+      <DependentUpon>DeliveryShedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="department.cs" />
+    <Compile Include="departments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="departments.designer.cs">
+      <DependentUpon>departments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit vehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit vehicle.designer.cs">
+      <DependentUpon>edit vehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditTransport_shedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditTransport_shedule.designer.cs">
+      <DependentUpon>EditTransport_shedule.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditUser.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EditUser.Designer.cs">
       <DependentUpon>EditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_machine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_machine.designer.cs">
+      <DependentUpon>Edit_machine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit_scheduled_product_orders_delivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_scheduled_product_orders_delivery.designer.cs">
+      <DependentUpon>edit_scheduled_product_orders_delivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit_transport_schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_transport_schedule.designer.cs">
+      <DependentUpon>edit_transport_schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="emp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emp.designer.cs">
+      <DependentUpon>emp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee.cs" />
+    <Compile Include="empSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="empSearch.designer.cs">
+      <DependentUpon>empSearch.cs</DependentUpon>
     </Compile>
     <Compile Include="errorMsg.cs">
       <SubType>Form</SubType>
@@ -85,17 +174,45 @@
     <Compile Include="errorMsg.Designer.cs">
       <DependentUpon>errorMsg.cs</DependentUpon>
     </Compile>
+    <Compile Include="expenses.cs" />
     <Compile Include="finance_home.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="finance_home.Designer.cs">
       <DependentUpon>finance_home.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2_.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2_.designer.cs">
+      <DependentUpon>Form2_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="general.cs" />
     <Compile Include="imageDialog.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="imageDialog.Designer.cs">
       <DependentUpon>imageDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="invoice.cs" />
+    <Compile Include="leave.cs" />
+    <Compile Include="leaves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="leaves.designer.cs">
+      <DependentUpon>leaves.cs</DependentUpon>
     </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
@@ -103,11 +220,46 @@
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Machine.cs" />
+    <Compile Include="machineRepairs.cs" />
+    <Compile Include="machines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="machines.designer.cs">
+      <DependentUpon>machines.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance_machines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance_machines.designer.cs">
+      <DependentUpon>Maintenance_machines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mechanic.cs" />
+    <Compile Include="Order confirmation details %28manager view%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order confirmation details %28manager view%29.designer.cs">
+      <DependentUpon>Order confirmation details %28manager view%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs" />
+    <Compile Include="OT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OT.designer.cs">
+      <DependentUpon>OT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="otClass.cs" />
+    <Compile Include="otSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="otSearch.designer.cs">
+      <DependentUpon>otSearch.cs</DependentUpon>
     </Compile>
     <Compile Include="productAgent_payment.cs">
       <SubType>Form</SubType>
@@ -123,12 +275,64 @@
     <Compile Include="rawMetirialPayments.Designer.cs">
       <DependentUpon>rawMetirialPayments.cs</DependentUpon>
     </Compile>
+    <Compile Include="repair.cs" />
+    <Compile Include="repairRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="repairRequest.designer.cs">
+      <DependentUpon>repairRequest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Repair_expenses.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Repair_expenses.Designer.cs">
       <DependentUpon>Repair_expenses.cs</DependentUpon>
     </Compile>
+    <Compile Include="Request_Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Request_Order.designer.cs">
+      <DependentUpon>Request_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salary.designer.cs">
+      <DependentUpon>salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="salary1.cs" />
+    <Compile Include="salarySearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salarySearch.designer.cs">
+      <DependentUpon>salarySearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales reports.designer.cs">
+      <DependentUpon>Sales reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchAttendance.designer.cs">
+      <DependentUpon>searchAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchLeaves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchLeaves.designer.cs">
+      <DependentUpon>searchLeaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceCenter.designer.cs">
+      <DependentUpon>ServiceCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceCenters.cs" />
+    <Compile Include="Special_Orders.cs" />
     <Compile Include="splash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +351,19 @@
     <Compile Include="SysMain.Designer.cs">
       <DependentUpon>SysMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Transport.cs" />
+    <Compile Include="Transport_schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transport_schedule.designer.cs">
+      <DependentUpon>Transport_schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="travel_expenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="travel_expenses.designer.cs">
+      <DependentUpon>travel_expenses.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
     <Compile Include="users.cs">
       <SubType>Form</SubType>
@@ -160,17 +377,67 @@
     <Compile Include="Utitlity.Designer.cs">
       <DependentUpon>Utitlity.cs</DependentUpon>
     </Compile>
+    <Compile Include="vehicle.cs" />
+    <Compile Include="VehicleRepairDetails.cs" />
+    <Compile Include="vehicleRepairs_shedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vehicleRepairs_shedule.designer.cs">
+      <DependentUpon>vehicleRepairs_shedule.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vehicle_expenses.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vehicle_expenses.designer.cs">
       <DependentUpon>Vehicle_expenses.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="add agent.resx">
+      <DependentUpon>add agent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addEdit_vehicles.resx">
+      <DependentUpon>addEdit_vehicles.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="add_bill.resx">
       <DependentUpon>add_bill.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Agent orders details.resx">
+      <DependentUpon>Agent orders details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="attendance.resx">
+      <DependentUpon>attendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckRepair.resx">
+      <DependentUpon>CheckRepair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeliveryShedule.resx">
+      <DependentUpon>DeliveryShedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="departments.resx">
+      <DependentUpon>departments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit vehicle.resx">
+      <DependentUpon>edit vehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditTransport_shedule.resx">
+      <DependentUpon>EditTransport_shedule.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditUser.resx">
       <DependentUpon>EditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_machine.resx">
+      <DependentUpon>Edit_machine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit_scheduled_product_orders_delivery.resx">
+      <DependentUpon>edit_scheduled_product_orders_delivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit_transport_schedule.resx">
+      <DependentUpon>edit_transport_schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emp.resx">
+      <DependentUpon>emp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="empSearch.resx">
+      <DependentUpon>empSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="errorMsg.resx">
       <DependentUpon>errorMsg.cs</DependentUpon>
@@ -178,14 +445,41 @@
     <EmbeddedResource Include="finance_home.resx">
       <DependentUpon>finance_home.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2_.resx">
+      <DependentUpon>Form2_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="imageDialog.resx">
       <DependentUpon>imageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="leaves.resx">
+      <DependentUpon>leaves.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="machines.resx">
+      <DependentUpon>machines.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance_machines.resx">
+      <DependentUpon>Maintenance_machines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order confirmation details %28manager view%29.resx">
+      <DependentUpon>Order confirmation details %28manager view%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OT.resx">
+      <DependentUpon>OT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="otSearch.resx">
+      <DependentUpon>otSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="productAgent_payment.resx">
       <DependentUpon>productAgent_payment.cs</DependentUpon>
@@ -204,8 +498,32 @@
     <EmbeddedResource Include="rawMetirialPayments.resx">
       <DependentUpon>rawMetirialPayments.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="repairRequest.resx">
+      <DependentUpon>repairRequest.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Repair_expenses.resx">
       <DependentUpon>Repair_expenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Request_Order.resx">
+      <DependentUpon>Request_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salary.resx">
+      <DependentUpon>salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salarySearch.resx">
+      <DependentUpon>salarySearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales reports.resx">
+      <DependentUpon>Sales reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchAttendance.resx">
+      <DependentUpon>searchAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchLeaves.resx">
+      <DependentUpon>searchLeaves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceCenter.resx">
+      <DependentUpon>ServiceCenter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="splash.resx">
       <DependentUpon>splash.cs</DependentUpon>
@@ -216,15 +534,25 @@
     <EmbeddedResource Include="SysMain.resx">
       <DependentUpon>SysMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Transport_schedule.resx">
+      <DependentUpon>Transport_schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="travel_expenses.resx">
+      <DependentUpon>travel_expenses.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="users.resx">
       <DependentUpon>users.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Utitlity.resx">
       <DependentUpon>Utitlity.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vehicleRepairs_shedule.resx">
+      <DependentUpon>vehicleRepairs_shedule.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vehicle_expenses.resx">
       <DependentUpon>Vehicle_expenses.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -460,6 +788,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money-bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ordersIco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repairIco1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maintainance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maintainance1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receipt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\473355.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\machine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repairing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repairing1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copier1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\machine %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-wash.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
