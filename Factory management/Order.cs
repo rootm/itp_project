@@ -180,7 +180,7 @@ namespace Factory_management{
                     db.connection.Open();
                 }
 
-                string query = "SELECT * FROM agent_orders";
+                string query = "SELECT ao.orderId,ao.agentId,ad.name,ao.orderDate,ao.total,ao.status FROM agent_orders ao,agent_details ad WHERE ad.agentId=ao.agentId";
 
                 MySqlCommand cmd = new MySqlCommand(query, db.connection);
 
@@ -205,7 +205,7 @@ namespace Factory_management{
 
         public DataTable searchOrders(string key)
         {
-            string query = "SELECT distinct order.orderId,status,slipno,amount,date FROM `sys`.`order` join sys.order_details on order.orderId = order_details.orderid where agentId = '"+key+"'; ";
+            string query = "SELECT ao.orderId,ao.agentId,ad.name,ao.orderDate,ao.total,ao.status FROM agent_orders ao,agent_details ad WHERE ad.agentId=ao.agentId AND ao.agentId="+key+"; ";
             try
             {
 

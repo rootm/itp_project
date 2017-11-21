@@ -102,7 +102,7 @@ namespace Factory_management
                 db.connection.Open();
             }
 
-            string query = "SELECT a.orderId,a.agentId,o.productId,a.orderDate,a.total,a.status,o.quantity  FROM agent_orders a , agent_orderitems o WHERE a.orderId = o.orderId";
+            string query = "SELECT a.orderId,a.agentId,o.productId,a.orderDate,a.total,a.status,o.quantity  FROM agent_orders a , agent_orderitems o WHERE a.orderId = o.orderId AND a.status='pending'";
 
             MySqlCommand cmd = new MySqlCommand(query, db.connection);
 
@@ -156,7 +156,7 @@ namespace Factory_management
                 db.connection.Open();
             }
 
-            string query = "SELECT a.orderId,a.agentId,o.productId,a.orderDate,a.total,a.status,o.quantity  FROM agent_orders a , agent_orderitems o WHERE a.orderId = o.orderId  AND a.orderId = '"+aoid+"'";
+            string query = "SELECT a.orderId,a.agentId,o.productId,a.orderDate,a.total,a.status,o.quantity  FROM agent_orders a , agent_orderitems o WHERE a.orderId = o.orderId  AND a.orderId = '"+aoid+"' AND a.status='pending'";
 
             MySqlCommand cmd = new MySqlCommand(query, db.connection);
 

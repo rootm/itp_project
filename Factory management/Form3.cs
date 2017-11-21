@@ -94,17 +94,30 @@ namespace Factory_management
 
         private void search_Click(object sender, EventArgs e)
         {
-            
-            int pid = Convert.ToInt32(textBox1.Text);
 
-            dataGridView3.Rows.Clear();
-            Loadgrid7(pid);
+            if (textBox1.Text!=String.Empty) {
+                int pid = Convert.ToInt32(textBox1.Text);
+
+                dataGridView3.Rows.Clear();
+                Loadgrid7(pid);
+            }
 
         }
 
         private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(Char.IsDigit(e.KeyChar) || (e.KeyChar == (char)Keys.Back)))
+                e.Handled = true;
         }
     }
 }

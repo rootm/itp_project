@@ -161,9 +161,11 @@ namespace Factory_management
 
         private void order_search_Click(object sender, EventArgs e)
         {
+            if (textBox1.Text!=String.Empty) { 
             int aoid = Convert.ToInt32(textBox1.Text);
             dataGridView2.Rows.Clear();
             Loadgrid4(aoid);
+            }
         }
 
         private void pending_orders_Click(object sender, EventArgs e)

@@ -58,7 +58,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(79, 182);
+            this.label1.Location = new System.Drawing.Point(43, 138);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 22);
             this.label1.TabIndex = 0;
@@ -67,7 +67,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(181, 182);
+            this.textBox1.Location = new System.Drawing.Point(145, 138);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(154, 25);
@@ -104,9 +104,9 @@
             this.order_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.order_search.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.order_search.ForeColor = System.Drawing.Color.White;
-            this.order_search.Location = new System.Drawing.Point(373, 174);
+            this.order_search.Location = new System.Drawing.Point(374, 130);
             this.order_search.Name = "order_search";
-            this.order_search.Size = new System.Drawing.Size(227, 38);
+            this.order_search.Size = new System.Drawing.Size(182, 38);
             this.order_search.TabIndex = 163;
             this.order_search.Text = "Search";
             this.order_search.UseVisualStyleBackColor = false;
@@ -120,9 +120,9 @@
             this.order_viewAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.order_viewAll.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.order_viewAll.ForeColor = System.Drawing.Color.White;
-            this.order_viewAll.Location = new System.Drawing.Point(638, 174);
+            this.order_viewAll.Location = new System.Drawing.Point(562, 130);
             this.order_viewAll.Name = "order_viewAll";
-            this.order_viewAll.Size = new System.Drawing.Size(227, 38);
+            this.order_viewAll.Size = new System.Drawing.Size(181, 38);
             this.order_viewAll.TabIndex = 162;
             this.order_viewAll.Text = "View All";
             this.order_viewAll.UseVisualStyleBackColor = false;
@@ -135,9 +135,9 @@
             this.cancel_order.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cancel_order.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cancel_order.ForeColor = System.Drawing.Color.White;
-            this.cancel_order.Location = new System.Drawing.Point(1053, 442);
+            this.cancel_order.Location = new System.Drawing.Point(516, 545);
             this.cancel_order.Name = "cancel_order";
-            this.cancel_order.Size = new System.Drawing.Size(251, 38);
+            this.cancel_order.Size = new System.Drawing.Size(227, 38);
             this.cancel_order.TabIndex = 165;
             this.cancel_order.Text = "Decline Order";
             this.cancel_order.UseVisualStyleBackColor = false;
@@ -150,9 +150,9 @@
             this.approve_order.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.approve_order.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.approve_order.ForeColor = System.Drawing.Color.White;
-            this.approve_order.Location = new System.Drawing.Point(796, 442);
+            this.approve_order.Location = new System.Drawing.Point(283, 545);
             this.approve_order.Name = "approve_order";
-            this.approve_order.Size = new System.Drawing.Size(251, 38);
+            this.approve_order.Size = new System.Drawing.Size(227, 38);
             this.approve_order.TabIndex = 164;
             this.approve_order.Text = "Approve Order";
             this.approve_order.UseVisualStyleBackColor = false;
@@ -165,7 +165,7 @@
             this.delivered_orders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delivered_orders.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delivered_orders.ForeColor = System.Drawing.Color.White;
-            this.delivered_orders.Location = new System.Drawing.Point(1053, 266);
+            this.delivered_orders.Location = new System.Drawing.Point(1034, 130);
             this.delivered_orders.Name = "delivered_orders";
             this.delivered_orders.Size = new System.Drawing.Size(251, 38);
             this.delivered_orders.TabIndex = 167;
@@ -180,7 +180,7 @@
             this.pending_orders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pending_orders.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pending_orders.ForeColor = System.Drawing.Color.White;
-            this.pending_orders.Location = new System.Drawing.Point(796, 266);
+            this.pending_orders.Location = new System.Drawing.Point(777, 130);
             this.pending_orders.Name = "pending_orders";
             this.pending_orders.Size = new System.Drawing.Size(251, 38);
             this.pending_orders.TabIndex = 166;
@@ -196,7 +196,7 @@
             this.add_order.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.add_order.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add_order.ForeColor = System.Drawing.Color.White;
-            this.add_order.Location = new System.Drawing.Point(72, 580);
+            this.add_order.Location = new System.Drawing.Point(50, 481);
             this.add_order.Name = "add_order";
             this.add_order.Size = new System.Drawing.Size(227, 38);
             this.add_order.TabIndex = 168;
@@ -212,7 +212,7 @@
             this.view_stock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.view_stock.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.view_stock.ForeColor = System.Drawing.Color.White;
-            this.view_stock.Location = new System.Drawing.Point(305, 580);
+            this.view_stock.Location = new System.Drawing.Point(283, 481);
             this.view_stock.Name = "view_stock";
             this.view_stock.Size = new System.Drawing.Size(227, 38);
             this.view_stock.TabIndex = 169;
@@ -228,7 +228,7 @@
             this.request_order.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.request_order.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.request_order.ForeColor = System.Drawing.Color.White;
-            this.request_order.Location = new System.Drawing.Point(538, 580);
+            this.request_order.Location = new System.Drawing.Point(516, 481);
             this.request_order.Name = "request_order";
             this.request_order.Size = new System.Drawing.Size(227, 38);
             this.request_order.TabIndex = 170;
@@ -262,7 +262,7 @@
             this.Column8,
             this.Column9});
             this.dataGridView2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.dataGridView2.Location = new System.Drawing.Point(72, 266);
+            this.dataGridView2.Location = new System.Drawing.Point(37, 184);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersVisible = false;
