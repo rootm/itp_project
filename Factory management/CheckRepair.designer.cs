@@ -33,7 +33,6 @@
             this.machineRadio = new System.Windows.Forms.RadioButton();
             this.vehicleRadio = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.search = new System.Windows.Forms.Button();
             this.vehicleRepairGrid = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,9 +51,10 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.vehicleRepairGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.machineRepairGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // machineRadio
@@ -62,7 +62,7 @@
             this.machineRadio.AutoSize = true;
             this.machineRadio.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.machineRadio.Location = new System.Drawing.Point(555, 122);
-            this.machineRadio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.machineRadio.Margin = new System.Windows.Forms.Padding(2);
             this.machineRadio.Name = "machineRadio";
             this.machineRadio.Size = new System.Drawing.Size(92, 26);
             this.machineRadio.TabIndex = 2;
@@ -75,7 +75,7 @@
             this.vehicleRadio.AutoSize = true;
             this.vehicleRadio.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vehicleRadio.Location = new System.Drawing.Point(694, 122);
-            this.vehicleRadio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.vehicleRadio.Margin = new System.Windows.Forms.Padding(2);
             this.vehicleRadio.Name = "vehicleRadio";
             this.vehicleRadio.Size = new System.Drawing.Size(82, 26);
             this.vehicleRadio.TabIndex = 3;
@@ -94,17 +94,6 @@
             this.label1.Size = new System.Drawing.Size(240, 30);
             this.label1.TabIndex = 4;
             this.label1.Text = "Check Repair Details";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Factory_management.Properties.Resources.repairing1;
-            this.pictureBox1.Location = new System.Drawing.Point(34, 16);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(76, 71);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
             // 
             // search
             // 
@@ -298,6 +287,17 @@
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.ReadOnly = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Factory_management.Properties.Resources.repairing1;
+            this.pictureBox1.Location = new System.Drawing.Point(34, 16);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(76, 71);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
             // CheckRepair
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -312,13 +312,13 @@
             this.Controls.Add(this.machineRepairGrid);
             this.Controls.Add(this.vehicleRepairGrid);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CheckRepair";
             this.Text = "CheckRepair";
             this.Load += new System.EventHandler(this.CheckRepair_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vehicleRepairGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.machineRepairGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

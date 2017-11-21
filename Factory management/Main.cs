@@ -83,6 +83,18 @@ namespace Factory_management
 
         }
 
+        void setWhite_InventryPanels()
+        {
+            inventory_panel.Controls.OfType<Panel>().ToList().ForEach(panel => panel.BackColor = Color.FromArgb(255, 255, 255, 255));
+
+        }
+
+        void setWhite_SupplierPanels()
+        {
+            supplier_panel.Controls.OfType<Panel>().ToList().ForEach(panel => panel.BackColor = Color.FromArgb(255, 255, 255, 255));
+
+        }
+
         void setWhite_MaintainancePanels() {
             maintainance_panel.Controls.OfType<Panel>().ToList().ForEach(panel => panel.BackColor = Color.FromArgb(255, 255, 255, 255));
 
@@ -103,9 +115,7 @@ namespace Factory_management
         void setWhite_FinancialPanels() {
 
             financial_panel.Controls.OfType<Panel>().ToList().ForEach(panel => panel.BackColor = Color.FromArgb(255, 255, 255, 255));
-          
-
-
+                      
         }
 
         void setWhite_VehiclePanels()
@@ -181,9 +191,15 @@ namespace Factory_management
 
         private void stocks_menu_Click(object sender, EventArgs e)
         {
-            
+            //  supplier_panel;
 
-           
+            inventory_panel.Width = topPanel.Width;
+            inventory_panel.Show();
+            inventory_panel.BringToFront();
+
+            orderDistributionButton.PerformClick();
+
+
 
         }
 
@@ -566,6 +582,149 @@ namespace Factory_management
             setWhite_MaintainancePanels();
             checkRepairPanel.BackColor = Color.FromArgb(255, 1, 194, 110);
             CheckRepair lg = new CheckRepair();
+            lg.TopLevel = false;
+            this.panel4.Controls.Clear();
+            this.panel4.Controls.Add(lg);
+            lg.Show();
+        }
+
+        private void addSupplierButton_Click(object sender, EventArgs e)
+        {
+            setWhite_SupplierPanels();
+            supplierManagement lg = new supplierManagement();
+            addSupplierPanel.BackColor = Color.FromArgb(255, 1, 194, 110);
+          
+                     
+            lg.TopLevel = false;
+            this.panel4.Controls.Clear();
+            this.panel4.Controls.Add(lg);
+            lg.Show();
+            lg.add_sub.Show();
+            lg.add_sub.BringToFront();
+
+        }
+
+        private void editSupplierButton_Click(object sender, EventArgs e)
+        {
+            setWhite_SupplierPanels();
+            supplierManagement lg = new supplierManagement();
+            editSupplierPanel.BackColor = Color.FromArgb(255, 1, 194, 110);
+           
+            
+
+            lg.TopLevel = false;
+            this.panel4.Controls.Clear();
+            this.panel4.Controls.Add(lg);
+            lg.Show();
+lg.edit_sup.Show();
+            lg.edit_sup.BringToFront();
+
+        }
+
+        private void supplier_menu_Click(object sender, EventArgs e)
+        {
+
+            supplier_panel.Width = topPanel.Width;
+            supplier_panel.Show();
+            supplier_panel.BringToFront();
+
+            addSupplierButton.PerformClick();
+
+        }
+
+        private void materialOrdersButton_Click(object sender, EventArgs e)
+        {
+            setWhite_SupplierPanels();
+            supplierMaterial_orders lg = new supplierMaterial_orders();
+            materialOrdersPanel.BackColor = Color.FromArgb(255, 1, 194, 110);
+           
+           
+            lg.TopLevel = false;
+            this.panel4.Controls.Clear();
+            this.panel4.Controls.Add(lg);
+            lg.Show();
+        }
+
+        private void ReportsButton_Click(object sender, EventArgs e)
+        {
+
+            setWhite_SupplierPanels();
+            Reports lg = new Reports();
+            panel5.BackColor = Color.FromArgb(255, 1, 194, 110);
+            
+
+            lg.TopLevel = false;
+            this.panel4.Controls.Clear();
+            this.panel4.Controls.Add(lg);
+            lg.Show();
+
+        }
+
+        private void orderDistributionButton_Click(object sender, EventArgs e)
+        {
+            setWhite_InventryPanels();
+            distributeAgentOrders lg = new distributeAgentOrders();
+            orderDistributionPanel.BackColor = Color.FromArgb(255, 1, 194, 110);
+           
+
+            lg.TopLevel = false;
+            this.panel4.Controls.Clear();
+            this.panel4.Controls.Add(lg);
+            lg.Show();
+        }
+
+        private void materialButton_Click(object sender, EventArgs e)
+        {
+            setWhite_InventryPanels();
+
+            panel6.BackColor = Color.FromArgb(255, 1, 194, 110);
+            MaterialNew lg = new MaterialNew();
+            
+
+            lg.TopLevel = false;
+            this.panel4.Controls.Clear();
+            this.panel4.Controls.Add(lg);
+            lg.Show();
+        }
+
+        private void reqMaterialButton_Click(object sender, EventArgs e)
+        {
+            setWhite_InventryPanels();
+
+            reqMaterialPanel.BackColor = Color.FromArgb(255, 1, 194, 110);
+            MaterialRecode lg = new MaterialRecode();
+           
+
+            lg.TopLevel = false;
+            this.panel4.Controls.Clear();
+            this.panel4.Controls.Add(lg);
+            lg.Show();
+        }
+
+        private void productManagementButton_Click(object sender, EventArgs e)
+        {
+            
+            setWhite_InventryPanels();
+
+            productManagementPanel.BackColor = Color.FromArgb(255, 1, 194, 110);
+            ProductNew lg = new ProductNew();
+
+
+            lg.TopLevel = false;
+            this.panel4.Controls.Clear();
+            this.panel4.Controls.Add(lg);
+            lg.Show();
+
+        }
+
+        private void materialDistributionButton_Click(object sender, EventArgs e)
+        {
+            setWhite_InventryPanels();
+
+            materialDistributionPanel.BackColor = Color.FromArgb(255, 1, 194, 110);
+            Products lg = new Products();
+
+
             lg.TopLevel = false;
             this.panel4.Controls.Clear();
             this.panel4.Controls.Add(lg);

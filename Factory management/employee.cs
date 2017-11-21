@@ -179,7 +179,7 @@ namespace Factory_management
             return dt;
         }
 
-        public void InsertInfo(string name, string gender, string birthday, string nic, string joinDate, int department, string designation, string address, string phone, string mobile, string email, double salary, string bank, int accNo)
+        public void InsertInfo(string name, string gender, string birthday, string nic, string joinDate, int department, string designation, string address, string phone, string mobile, string email, string salary, string bank, string accNo)
         {
 
             DBAccess db = new DBAccess();
@@ -198,7 +198,7 @@ namespace Factory_management
 
         }
 
-        public void UpdateInfo(int eid, string name, string gender, string birthday, string nic, string joinDate, int department, string designation, string address, string phone, string mobile, string email, double salary, string bank, int accNo)
+        public void UpdateInfo(string eid, string name, string gender, string birthday, string nic, string joinDate, int department, string designation, string address, string phone, string mobile, string email, string salary, string bank, string accNo)
         {
 
             DBAccess db = new DBAccess();

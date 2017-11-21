@@ -249,7 +249,7 @@
             // 
             // date
             // 
-            this.date.CustomFormat = "yyyy-MM";
+            this.date.CustomFormat = "yyyy-MM-dd";
             this.date.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.date.Location = new System.Drawing.Point(174, 97);
@@ -421,6 +421,7 @@
             this.search_ot.TabIndex = 174;
             this.search_ot.Text = "Search OT";
             this.search_ot.UseVisualStyleBackColor = false;
+            this.search_ot.Visible = false;
             this.search_ot.Click += new System.EventHandler(this.search_ot_Click);
             // 
             // clear_ot

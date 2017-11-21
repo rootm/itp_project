@@ -370,7 +370,7 @@ namespace Factory_management
                     if (dialogResult == DialogResult.Yes)
                     {
                         //set values
-                        int EID1 = Convert.ToInt32(label7.Text);
+                        String EID1 = label7.Text;
                         string Name1 = textBox1.Text;
                         string Gender1;
                         if (radioButton1.Checked)
@@ -391,9 +391,9 @@ namespace Factory_management
                         string Phone1 = textBox4.Text;
                         string Mobile1 = textBox5.Text;
                         string Email1 = textBox6.Text;
-                        double Salary1 = Convert.ToDouble(textBox7.Text);
+                        string Salary1 = textBox7.Text;
                         string Bank1 = textBox8.Text;
-                        int AccNo1 = Convert.ToInt32(textBox9.Text);
+                        string AccNo1 = textBox9.Text;
 
 
                         ee.UpdateInfo(EID1, Name1, Gender1, Birthday1, NIC1, JoinDate1, Department1, Designation1, Address1, Phone1, Mobile1, Email1, Salary1, Bank1, AccNo1);
